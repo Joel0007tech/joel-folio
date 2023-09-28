@@ -39,8 +39,8 @@ const Home = () => {
              <p className='text-white text-6xl font-semibold text-center'>I'm a <span className='text-green-600 text-6xl font-bold'>
               Frontend developer</span></p>
               <p className='text-center text-slate-200 text-lg mt-2'>based in Osun state, Nigeria</p>
-              <a href="http://" className='text-green-600 bg-transparent border-[2px] border-green-600 rounded-full
-              pl-5 pr-5 m-auto p-2 text-base relative bottom-7'>
+              <a href="http://" className='text-white bg-transparent border-[3px] border-green-500 rounded-full
+              pl-7 pr-7 m-auto p-2 text-base relative bottom-10 hover:text-black hover:bg-green-500'>
                 Hire Me</a>
           </div>
         </div>
