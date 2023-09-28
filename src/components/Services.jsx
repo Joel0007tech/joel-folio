@@ -29,28 +29,29 @@ const Services = () => {
         </div>
         </div>
         <div className='flex flex-col m-auto gap-5'>
-          <div className='flex'>
-            <div className='flex-col'>
-            <GrReactjs/>
-            <p>ReactJS</p>
+          <h3>My Skills</h3>
+          <div className='flex gap-3'>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <GrReactjs className='text-[100px]'/>
+            <p className='text-center text-base font-semibold'>ReactJS</p>
             </div>
-            <div className='flex-col'>
-            <IoLogoJavascript/>
-            <p>ReactJS</p>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <IoLogoJavascript className='text-[100px]'/>
+            <p className='text-center text-base font-semibold'>Javascript</p>
             </div>
-            <div className='flex-col'>
-            <BiLogoTailwindCss/>
-            <p>ReactJS</p>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <BiLogoTailwindCss className='text-[100px]'/>
+            <p className='text-center text-base font-semibold'>Tailwindcss</p>
             </div> 
           </div>
-          <div className='flex'>
-            <div className='flex-col'>
-            <BiLogoCss3/>
-            <p>ReactJS</p>
+          <div className='flex justify-center gap-3'>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <BiLogoCss3 className='text-[100px]'/>
+            <p className='text-center text-base font-semibold'>CSS</p>
             </div>
-            <div className='flex-col'>
-            <BiLogoHtml5/>
-            <p>ReactJS</p>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <BiLogoHtml5 className='text-[100px]'/>
+            <p className='text-center text-base font-semibold'>Html</p>
             </div> 
           </div>
         </div>
