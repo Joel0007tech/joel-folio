@@ -12,7 +12,7 @@ import {LuFacebook , LuTwitter} from "react-icons/lu"
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-slate-400'>
         {/* sidenav */}
         <div className='flex'>
           <nav className='flex flex-col bg-black p-5'>
@@ -33,7 +33,7 @@ const Home = () => {
             <Link href='#'><LuTwitter className='fill-gray-200 text-lg'/></Link>
             <Link href='#'><IoLogoGithub className='fill-gray-200 text-lg'/></Link>
             </div>
-          </nav>
+          </nav>         
           <div className=' bg-slate-500 w-full p-5 flex flex-col gap-2'>
              <h3 className='text-center font-semibold  mt-48 text-xl text-white'>welcome</h3>
              <p className='text-white text-6xl font-semibold text-center'>I'm a <span className='text-green-600 text-6xl font-bold'>
