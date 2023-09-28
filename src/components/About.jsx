@@ -25,7 +25,7 @@ const About = () => {
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Address : <span  className='font-normal'>Osun, Nigeria</span></p>
           <a href="http://" className='text-white bg border-[3px] bg-green-500 rounded-full
-              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500'>
+              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 mt-3'>
                 Download CV</a>
          </div>
       </div>
