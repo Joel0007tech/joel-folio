@@ -25,6 +25,7 @@ const Services = () => {
           animations, plus amazing user experience.</p>
         </div>
         </div>
+        <input type="reset" name="" id="" />
       </div>
     </div>
   )
