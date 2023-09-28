@@ -29,6 +29,24 @@ const About = () => {
                 Download CV</a>
          </div>
       </div>
+      <div className='flex gap-28 justify-center'>
+        <div className='flex flex-col'>
+          <p className='text-[70px] font-bold text-slate-500'>2+</p>
+          <p className='text-md relative right-4 font-semibold text-slate-400'>Years Experience</p>
+        </div>
+        <div className='flex flex-col'>
+          <p className='text-[70px] font-bold text-slate-500'>3+</p>
+          <p className='text-md relative right-4 font-semibold text-slate-400'>Happy Clients</p>
+        </div>
+        <div className='flex flex-col'>
+          <p className='text-[70px] font-bold text-slate-500'>10+</p>
+          <p className='text-md relative right-4 font-semibold text-slate-400'>Projects Done</p>
+        </div>
+        <div className='flex flex-col'>
+          <p className='text-[70px] font-bold text-slate-500'>2</p>
+          <p className='text-md relative right-4 font-semibold text-slate-400'>Awards</p>
+        </div>
+      </div>
       </div>
     </div>
   )
