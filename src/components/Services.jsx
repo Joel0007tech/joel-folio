@@ -28,8 +28,8 @@ const Services = () => {
           animations, plus amazing user experience.</p>
         </div>
         </div>
-        <div className='flex flex-col m-auto gap-5'>
-          <h3>My Skills</h3>
+        <div className='flex flex-col m-auto gap-5 mt-6'>
+          <h3 className='text-center font-semibold text-3xl pb-5'>My Skills</h3>
           <div className='flex gap-3'>
             <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
             <GrReactjs className='text-[100px]'/>
