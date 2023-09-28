@@ -1,6 +1,7 @@
 import React from 'react';
 import {CgWebsite} from "react-icons/cg";
 import {AiOutlineAppstore} from "react-icons/ai";
+import {GrReactjs} from "react-icons/gr"
 
 const Services = () => {
   return (
@@ -25,7 +26,36 @@ const Services = () => {
           animations, plus amazing user experience.</p>
         </div>
         </div>
-        <input type="reset" name="" id="" />
+        <div className='flex flex-col m-auto gap-5'>
+          <div className='flex'>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div> 
+          </div>
+          <div className='flex'>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div>
+            <div className='flex-col'>
+            <GrReactjs/>
+            <p>ReactJS</p>
+            </div> 
+          </div>
+        </div>
       </div>
     </div>
   )
