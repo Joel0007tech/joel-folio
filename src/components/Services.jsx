@@ -1,7 +1,9 @@
 import React from 'react';
 import {CgWebsite} from "react-icons/cg";
 import {AiOutlineAppstore} from "react-icons/ai";
-import {GrReactjs} from "react-icons/gr"
+import {GrReactjs} from "react-icons/gr";
+import {IoLogoJavascript} from "react-icons/io";
+import {BiLogoTailwindCss, BiLogoCss3, BiLogoHtml5} from "react-icons/bi";
 
 const Services = () => {
   return (
@@ -33,25 +35,21 @@ const Services = () => {
             <p>ReactJS</p>
             </div>
             <div className='flex-col'>
-            <GrReactjs/>
+            <IoLogoJavascript/>
             <p>ReactJS</p>
             </div>
             <div className='flex-col'>
-            <GrReactjs/>
+            <BiLogoTailwindCss/>
             <p>ReactJS</p>
             </div> 
           </div>
           <div className='flex'>
             <div className='flex-col'>
-            <GrReactjs/>
+            <BiLogoCss3/>
             <p>ReactJS</p>
             </div>
             <div className='flex-col'>
-            <GrReactjs/>
-            <p>ReactJS</p>
-            </div>
-            <div className='flex-col'>
-            <GrReactjs/>
+            <BiLogoHtml5/>
             <p>ReactJS</p>
             </div> 
           </div>
