@@ -12,7 +12,7 @@ import {LuFacebook , LuTwitter} from "react-icons/lu"
 
 const Home = () => {
   return (
-    <div className='bg-slate-400'>
+    <div className='bg-slate-500'>
         {/* sidenav */}
         <div className='flex'>
           <nav className='flex flex-col bg-black p-5'>
