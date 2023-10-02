@@ -3,15 +3,22 @@ import { Link } from 'react-router-dom'
 import Testimonial from './Testimonial.jsx'
 import Contact from './Contact.jsx'
 import About from './About'
-// import Projects from './Projects.jsx'
+import Projects from './Projects.jsx'
 import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
-import {LuFacebook , LuTwitter} from "react-icons/lu"
+import {LuFacebook , LuTwitter} from "react-icons/lu";
 
 
 
-const Home = () => {
+const Home = ({
+    home= "Home",
+    about= "About Me",
+    contact= "Contact Me",
+    projects= "Projects",
+    services= "My Services",
+    testimonial= "What Our Client Says"
+}) => {
   return (
     <div className='bg-slate-500'>
 
@@ -23,12 +30,12 @@ const Home = () => {
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
             <ul className='flex flex-col gap-6 p-10 mt-12'>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="/">Home</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="about">About Me</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="services">What I Do</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="projects">Projects</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="testimonial">What Our Client Says</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="contact">Contact Me</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="/">{home}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="about">{about}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="services">{services}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="projects">{projects}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="testimonial">{testimonial}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><Link to="contact">{contact}</Link></li>
             </ul>
             <div className='flex gap-8 justify-center'>
             <Link href='#'><LuFacebook className='fill-gray-200 text-lg'/></Link>
@@ -49,7 +56,7 @@ const Home = () => {
         </div>
         <About/>
         <Services/>
-        {/* <Projects/> */}
+        <Projects/>
         <Testimonial/>
         <Contact/>
     </div>
