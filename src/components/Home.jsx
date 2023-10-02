@@ -3,16 +3,21 @@ import { Link } from 'react-router-dom'
 import Testimonial from './Testimonial.jsx'
 import Contact from './Contact.jsx'
 import About from './About'
-import Projects from './Projects.jsx'
+// import Projects from './Projects.jsx'
 import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
 import {LuFacebook , LuTwitter} from "react-icons/lu"
 
 
-const Home = () => {
+
+const Home = ({first = "hello",
+   second="hi",
+    third ="haffa",
+     fourth ="wetin dey"}) => {
   return (
     <div className='bg-slate-500'>
+
         {/* sidenav */}
         <div className='flex'>
           <nav className='flex flex-col bg-black p-5'>
@@ -42,11 +47,17 @@ const Home = () => {
               <a href="http://" className='text-white bg-transparent border-[3px] border-green-500 rounded-full
               pl-7 pr-7 m-auto p-2 text-base relative bottom-10 hover:text-black hover:bg-green-500'>
                 Hire Me</a>
+                <div className='p-5'>
+                <p className='text-white font-bold text-2xl'>{first}</p>
+               <p className='text-white font-bold text-2xl'>{second}</p>
+               <p className='text-white font-bold text-2xl'>{third}</p>
+               <p className='text-white font-bold text-2xl'>{fourth}</p>
+                </div>
           </div>
         </div>
         <About/>
         <Services/>
-        <Projects/>
+        {/* <Projects/> */}
         <Testimonial/>
         <Contact/>
     </div>
