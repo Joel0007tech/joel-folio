@@ -4,12 +4,15 @@ import dashboard from "../assets/admin-dashboard.png";
 import ace from "../assets/ace project.png";
 import movie from "../assets/movie-task.png"
 
-const Projects = () => {
+const Projects = ({
+  background= "PROJECTS",
+  frontText ="Want to see my past works?"
+}) => {
   return (
     <div>
       <div className='flex flex-col bg-white pb-10'>
-      <h1 className='text-[150px] text-slate-200 text-center font-semibold'>PROJECTS</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32'>want to see my past works?</h3>
+      <h1 className='text-[150px] text-slate-200 text-center font-semibold'>{background}</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex flex-col m-auto gap-7'>
           <div className='flex gap-7'>
           <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'><img src={gpt} alt="gpt" width={500}

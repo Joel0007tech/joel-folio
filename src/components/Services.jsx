@@ -5,12 +5,15 @@ import {GrReactjs} from "react-icons/gr";
 import {IoLogoJavascript} from "react-icons/io";
 import {BiLogoTailwindCss, BiLogoCss3, BiLogoHtml5} from "react-icons/bi";
 
-const Services = () => {
+const Services = ({
+  background="SERVICES",
+  frontText="What I do"
+}) => {
   return (
     <div>
       <div className='flex flex-col mt-10 pb-20'>
-      <h1 className='text-[150px] text-slate-200 text-center font-semibold'>SERVICES</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32'>What I Do?</h3>
+      <h1 className='text-[150px] text-slate-200 text-center font-semibold'>{background}</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex justify-center gap-10 relative bottom-12'>
         <div className='flex flex-col gap-4 border-[3px] border-gray-500 rounded-xl bg-gray-600 p-7'>
           <CgWebsite className='text-3xl fill-green-600 text-gray-600 bg-white border rounded-md'/>
