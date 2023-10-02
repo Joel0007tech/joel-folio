@@ -11,10 +11,7 @@ import {LuFacebook , LuTwitter} from "react-icons/lu"
 
 
 
-const Home = ({first = "hello",
-   second="hi",
-    third ="haffa",
-     fourth ="wetin dey"}) => {
+const Home = () => {
   return (
     <div className='bg-slate-500'>
 
@@ -47,12 +44,7 @@ const Home = ({first = "hello",
               <a href="http://" className='text-white bg-transparent border-[3px] border-green-500 rounded-full
               pl-7 pr-7 m-auto p-2 text-base relative bottom-10 hover:text-black hover:bg-green-500'>
                 Hire Me</a>
-                <div className='p-5'>
-                <p className='text-white font-bold text-2xl'>{first}</p>
-               <p className='text-white font-bold text-2xl'>{second}</p>
-               <p className='text-white font-bold text-2xl'>{third}</p>
-               <p className='text-white font-bold text-2xl'>{fourth}</p>
-                </div>
+               
           </div>
         </div>
         <About/>
