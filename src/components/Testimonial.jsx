@@ -7,7 +7,7 @@ const Testimonial = ({
 }) => {
   return (
     <div>
-      <div>
+      <div className='pb-16'>
       <h1 className='text-[150px] text-slate-400 text-center font-semibold'>{background}</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex justify-center gap-10'>
