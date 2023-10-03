@@ -8,6 +8,8 @@ import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
 import {LuFacebook , LuTwitter} from "react-icons/lu";
+import { Link as ScrollLink} from 'react-scroll';
+import { Element } from 'react-scroll';
 
 
 
@@ -30,12 +32,12 @@ const Home = ({
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
             <ul className='flex flex-col gap-6 p-10 mt-12'>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="/">{home}</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="about">{about}</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="services">{services}</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="projects">{projects}</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="testimonial">{testimonial}</Link></li>
-                <li className='text-white text-base text-center hover:text-green-900'><Link to="contact">{contact}</Link></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="/">{home}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="about">{about}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="services">{services}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="projects">{projects}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="testimonial">{testimonial}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="contact">{contact}</ScrollLink></li>
             </ul>
             <div className='flex gap-8 justify-center'>
             <Link href='#'><LuFacebook className='fill-gray-200 text-lg'/></Link>
@@ -54,11 +56,21 @@ const Home = ({
                
           </div>
         </div>
-        <About/>
-        <Services/>
+        <Element name="about">
+          <About/>
+        </Element>
+       <Element name="services">
+       <Services/>
+       </Element>
+        <Element name="projects">
         <Projects/>
-        <Testimonial/>
-        <Contact/>
+        </Element>
+       <Element name="testimonial">
+       <Testimonial/>
+       </Element>
+      <Element name="contact">
+      <Contact/>
+      </Element>
     </div>
   )
 }
