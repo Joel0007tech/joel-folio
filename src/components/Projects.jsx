@@ -19,7 +19,9 @@ const Projects = ({
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex flex-col m-auto gap-7'>
           <div className='flex gap-7'>
-          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'><img src={gpt} alt="gpt" width={500}
+          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3' 
+          data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+            <img src={gpt} alt="gpt" width={500}
            className='border rounded-xl'/>
            <div className='flex justify-between'>
             <p className="text-white font-normal p-3 text-lg" >{GPT}</p>
@@ -28,7 +30,9 @@ const Projects = ({
                 CLICK HERE</a>   
                 </div>        
          </div>
-          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'><img src={dashboard} alt="admin-dashboard" width={500}
+          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'
+          data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+            <img src={dashboard} alt="admin-dashboard" width={500}
            className='border rounded-xl'/>
            <div className='flex justify-between'>
             <p className="text-white font-normal p-3 text-lg">
@@ -42,7 +46,9 @@ const Projects = ({
           </div>
           
           <div className='flex gap-7'>
-          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'><img src={Ace} alt="ace" width={500}
+          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'
+          data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+            <img src={Ace} alt="ace" width={500}
            className='border rounded-xl'/>
            <div className='flex justify-between'>
             <p className="text-white font-normal p-3 text-lg">{ace}</p>
@@ -51,7 +57,9 @@ const Projects = ({
                 CLICK HERE</a>   
                 </div>        
          </div>
-          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'><img src={movie} alt="movie-task" width={500}
+          <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'
+          data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+            <img src={movie} alt="movie-task" width={500}
            className='border rounded-xl'/>
            <div className='flex justify-between'>
             <p className="text-white font-normal p-3 text-lg">{hoobank}</p>

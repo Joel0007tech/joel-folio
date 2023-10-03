@@ -10,7 +10,9 @@ import {IoLogoGithub} from "react-icons/io"
 import {LuFacebook , LuTwitter} from "react-icons/lu";
 import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+Aos.init();
 
 const Home = ({
     home= "Home",
@@ -20,6 +22,9 @@ const Home = ({
     services= "My Services",
     testimonial= "What Our Client Says"
 }) => {
+
+  
+
   return (
     <div className='bg-slate-500'>
 
@@ -30,7 +35,7 @@ const Home = ({
             <img src={myImage} alt="image" className=' border rounded-full w-[60%] h-[100px] m-auto'/>
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
-            <ul className='flex flex-col gap-6 p-10 mt-12'>
+            <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">
                 <li className='text-white text-base text-center hover:text-green-900'>
                   <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
                 <li className='text-white text-base text-center hover:text-green-900'>
@@ -50,7 +55,7 @@ const Home = ({
             <Link href='#'><IoLogoGithub className='fill-gray-200 text-lg'/></Link>
             </div>
           </nav>         
-          <div className=' bg-slate-500 w-full p-5 flex flex-col gap-2'>
+          <div className=' bg-slate-500 w-full p-5 flex flex-col gap-2' data-aos="fade" data-aos-duration="1000">
              <h3 className='text-center font-semibold  mt-48 text-xl text-white'>welcome</h3>
              <p className='text-white text-6xl font-semibold text-center'>I'm a <span className='text-green-600 text-6xl font-bold'>
               Frontend developer</span></p>
@@ -61,19 +66,19 @@ const Home = ({
                
           </div>
         </div>
-        <Element name="about">
+        <Element name="about" data-aos="fade-up" data-aos-duration="1000">
           <About/>
         </Element>
-       <Element name="services">
+       <Element name="services" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
        <Services/>
        </Element>
-        <Element name="projects">
+        <Element name="projects" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
         <Projects/>
         </Element>
-       <Element name="testimonial">
+       <Element name="testimonial" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
        <Testimonial/>
        </Element>
-      <Element name="contact">
+      <Element name="contact" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
       <Contact/>
       </Element>
     </div>

@@ -34,25 +34,30 @@ const Services = ({
         <div className='flex flex-col m-auto gap-5 mt-6'>
           <h3 className='text-center font-semibold text-3xl pb-5'>My Skills</h3>
           <div className='flex gap-3'>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
             <GrReactjs className='text-[100px] fill-blue-500'/>
             <p className='text-center text-base font-semibold'>ReactJS</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
             <IoLogoJavascript className='text-[100px]'/>
             <p className='text-center text-base font-semibold'>Javascript</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
             <BiLogoTailwindCss className='text-[100px] fill-blue-600'/>
             <p className='text-center text-base font-semibold'>Tailwindcss</p>
             </div> 
           </div>
           <div className='flex justify-center gap-3'>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
             <BiLogoCss3 className='text-[100px]'/>
             <p className='text-center text-base font-semibold'>CSS</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 '>
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
             <BiLogoHtml5 className='text-[100px] fill-orange-500'/>
             <p className='text-center text-base font-semibold'>Html</p>
             </div> 
