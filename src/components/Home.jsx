@@ -12,7 +12,6 @@ import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 
 
-
 const Home = ({
     home= "Home",
     about= "About Me",
@@ -32,12 +31,18 @@ const Home = ({
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
             <ul className='flex flex-col gap-6 p-10 mt-12'>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="/">{home}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="about">{about}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="services">{services}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="projects">{projects}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="testimonial">{testimonial}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'><ScrollLink to="contact">{contact}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="about" className='cursor-pointer' smooth={true} duration={500}>{about}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="services" className='cursor-pointer' smooth={true} duration={500}>{services}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="projects" className='cursor-pointer' smooth={true} duration={500}>{projects}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="testimonial" className='cursor-pointer' smooth={true} duration={500}>{testimonial}</ScrollLink></li>
+                <li className='text-white text-base text-center hover:text-green-900'>
+                  <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
             </ul>
             <div className='flex gap-8 justify-center'>
             <Link href='#'><LuFacebook className='fill-gray-200 text-lg'/></Link>
