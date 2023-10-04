@@ -56,7 +56,7 @@ const Home = ({
             <Link href='#'><IoLogoGithub className='fill-gray-200 text-lg'/></Link>
             </div>
           </nav>         
-          <div className=' bg-slate-500 w-full p-5 flex flex-col gap-2' data-aos="fade" data-aos-duration="1000">
+          <div className='w-full p-5 flex flex-col gap-2' data-aos="fade" data-aos-duration="1000" id='home-bg'>
              <h3 className='text-center font-semibold  mt-48 text-xl text-white'>welcome</h3>
              <p className='text-white text-6xl font-semibold text-center'>I'm a <span className='text-green-600 text-6xl font-bold'>
               Frontend developer</span></p>

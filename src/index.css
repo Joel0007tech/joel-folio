@@ -5,3 +5,8 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+#home-bg{
+    background-image: url(file:///C:/Users/User/Pictures/zuri%20cdt%20img-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

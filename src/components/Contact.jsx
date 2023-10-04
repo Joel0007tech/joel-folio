@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const scrollToTop = () => {
   scroll.scrollToTop({
-    duration: 500, // Duration of the scrolling animation in milliseconds
+    duration: 800, // Duration of the scrolling animation in milliseconds
     smooth: "easeInOutQuart", // Type of easing for the scrolling animation
   });
 };
