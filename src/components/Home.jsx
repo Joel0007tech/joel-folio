@@ -32,7 +32,8 @@ const Home = ({
         <div className='flex'>
           <nav className='flex flex-col bg-black p-5'>
             
-            <img src={myImage} alt="image" className=' border rounded-full w-[60%] h-[100px] m-auto'/>
+            <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
+            data-aos-delay="200" data-aos-duration="1000"/>
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
             <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">

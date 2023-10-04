@@ -2,3 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+#border-line{
+    border: 3px solid green;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: green;
+    border-bottom-width: 3px;
+    width:250px;
+}
