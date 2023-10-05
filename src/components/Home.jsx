@@ -70,10 +70,11 @@ const [open, setOpen] = useState(null);
                
           </div>
         </div>
-        <div className='sm:block hidden w-full'>
-            <div className='flex p-5 justify-between w-full'>
+        <div className='sm:block hidden'>
+            <div className='flex p-5 justify-between'>
               <Link href='#' className='text-2xl text-white'>{mobileLogo}</Link>
-              <BiMenu className='text-2xl text-white' onClick={()=> setOpen(!open)}/>
+              <BiMenu className='text-2xl text-white relative float-right' onClick={()=> setOpen(!open)}/>
+              </div>
               {
                 (open && (
                   <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">
@@ -93,7 +94,6 @@ const [open, setOpen] = useState(null);
                 )
                 )
               }
-            </div>
         </div>
         <Element name="about" data-aos="fade-up" data-aos-duration="1000">
           <About/>

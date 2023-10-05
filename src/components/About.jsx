@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div>
       <div className='p-3 flex flex-col bg-white'>
-          <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32'>Know Me More</h3>
-      <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
+          <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl sm:relative sm:top-12'>ABOUT ME</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:top-0'>Know Me More</h3>
+      <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col sm:mt-14'>
          <div className='flex flex-col gap-2'>
           <h3 className='text-2xl font-semibold text-green-700'>I'm Joel,
           <span className='text-3xl font-semibold white'> a Frontend Developer</span></h3>
