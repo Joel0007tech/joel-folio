@@ -15,7 +15,7 @@ const Projects = ({
   return (
     <div>
       <div className='flex flex-col bg-white pb-10'>
-      <h1 className='text-[150px] text-slate-200 text-center font-semibold'>{background}</h1>
+      <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-2xl'>{background}</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex flex-col m-auto gap-7'>
           <div className='flex gap-7'>

@@ -21,7 +21,8 @@ const Home = ({
     contact= "Contact Me",
     projects= "Projects",
     services= "My Services",
-    testimonial= "What Our Client Says"
+    testimonial= "What Our Client Says",
+    mobileLogo="< />"
 }) => {
 
   
@@ -70,7 +71,8 @@ const [open, setOpen] = useState(null);
           </div>
         </div>
         <div className='sm:block hidden w-full'>
-            <div className='flex p-5'>
+            <div className='flex p-5 justify-between w-full'>
+              <Link href='#' className='text-2xl text-white'>{mobileLogo}</Link>
               <BiMenu className='text-2xl text-white' onClick={()=> setOpen(!open)}/>
               {
                 (open && (
@@ -89,7 +91,6 @@ const [open, setOpen] = useState(null);
                     <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
               </ul>
                 )
-
                 )
               }
             </div>

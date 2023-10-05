@@ -12,7 +12,7 @@ const Services = ({
   return (
     <div>
       <div className='flex flex-col mt-10 pb-20'>
-      <h1 className='text-[150px] text-slate-400 text-center font-semibold'>{background}</h1>
+      <h1 className='text-[150px] text-slate-400 text-center font-semibold sm:text-2xl'>{background}</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex justify-center gap-10 relative bottom-12'>
         <div className='flex flex-col gap-4 border-[3px] border-gray-500 rounded-xl bg-gray-600 p-7'>
