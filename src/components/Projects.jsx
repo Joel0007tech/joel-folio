@@ -1,6 +1,6 @@
 import React from 'react'
-import gpt from "../assets/gpt-3.png";
-import dashboard from "../assets/admin-dashboard.png";
+import gpt from "../assets/gpt3.png";
+import dashboard from "../assets/adminDashboard.png";
 import Ace from "../assets/ace project.png";
 import movie from "../assets/hoobank project.png"
 
@@ -32,7 +32,7 @@ const Projects = ({
          </div>
           <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'
           data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
-            <img src={dashboard} alt="admin-dashboard" width={500}
+            <img src={dashboard} alt="admin" width={500}
            className='border rounded-xl'/>
            <div className='flex justify-between'>
             <p className="text-white font-normal p-3 text-lg">
