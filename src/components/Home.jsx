@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import Testimonial from './Testimonial.jsx'
 import Contact from './Contact.jsx'
@@ -8,6 +8,7 @@ import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
 import {LuFacebook , LuTwitter} from "react-icons/lu";
+import { BiMenu } from 'react-icons/bi'
 import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
@@ -24,12 +25,13 @@ const Home = ({
 }) => {
 
   
+const [open, setOpen] = useState(null);
 
   return (
     <div className='bg-slate-500'>
 
         {/* sidenav */}
-        <div className='flex'>
+        <div className='flex sm:hidden'>
           <nav className='flex flex-col bg-black p-5'>
             
             <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
@@ -66,6 +68,31 @@ const Home = ({
                 Hire Me</a>
                
           </div>
+        </div>
+        <div className='sm:block hidden w-full'>
+            <div className='flex p-5'>
+              <BiMenu className='text-2xl text-white' onClick={()=> setOpen(!open)}/>
+              {
+                (open && (
+                  <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="about" className='cursor-pointer' smooth={true} duration={500}>{about}</ScrollLink></li>
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="services" className='cursor-pointer' smooth={true} duration={500}>{services}</ScrollLink></li>
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="projects" className='cursor-pointer' smooth={true} duration={500}>{projects}</ScrollLink></li>
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="testimonial" className='cursor-pointer' smooth={true} duration={500}>{testimonial}</ScrollLink></li>
+                  <li className='text-white text-base text-center hover:text-green-900'>
+                    <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
+              </ul>
+                )
+
+                )
+              }
+            </div>
         </div>
         <Element name="about" data-aos="fade-up" data-aos-duration="1000">
           <About/>
