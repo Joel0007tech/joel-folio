@@ -77,7 +77,7 @@ const [open, setOpen] = useState(null);
               </div>
               {
                 (open && (
-                  <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">
+                  <ul className='flex flex-col gap-6 p-10 mt-12 sm:mt-0' data-aos="fade-up" data-aos-duration="1000">
                   <li className='text-white text-base text-center hover:text-green-900'>
                     <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
                   <li className='text-white text-base text-center hover:text-green-900'>

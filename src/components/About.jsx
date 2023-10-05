@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div>
       <div className='p-3 flex flex-col bg-white'>
-          <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl sm:relative sm:top-12'>ABOUT ME</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:top-0'>Know Me More</h3>
-      <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col sm:mt-14'>
+          <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20'>Know Me More</h3>
+      <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
          <div className='flex flex-col gap-2'>
           <h3 className='text-2xl font-semibold text-green-700'>I'm Joel,
           <span className='text-3xl font-semibold white'> a Frontend Developer</span></h3>
@@ -29,20 +29,20 @@ const About = () => {
                 Download CV</a>
          </div>
       </div>
-      <div className='flex gap-28 justify-center sm:flex sm:flex-col'>
-        <div className='flex flex-col'>
+      <div className='flex gap-28 justify-center sm:flex sm:flex-col sm:gap-3'>
+        <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>2+</p>
           <p className='text-md relative right-4 font-semibold text-slate-400'>Years Experience</p>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>3+</p>
           <p className='text-md relative right-4 font-semibold text-slate-400'>Happy Clients</p>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>10+</p>
           <p className='text-md text-center font-semibold text-slate-400'>Projects Done</p>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>2</p>
           <p className='text-md text-center font-semibold text-slate-400'>Awards</p>
         </div>

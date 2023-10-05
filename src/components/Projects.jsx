@@ -14,9 +14,9 @@ const Projects = ({
 }) => {
   return (
     <div>
-      <div className='flex flex-col bg-white pb-10'>
+      <div className='flex flex-col bg-white pb-10 sm:p-3'>
       <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>{background}</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-lg'>{frontText}</h3>
         <div className='flex flex-col m-auto gap-7'>
           <div className='flex gap-7 sm:flex sm:flex-col'>
           <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3' 

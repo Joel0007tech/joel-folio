@@ -22,11 +22,11 @@ const Contact = ({
 }) => {
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-white sm:p-3">
         <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}
         </h1>
-        <h3 className="font-semibold text-4xl text-center relative bottom-32">
+        <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-[84px] sm:text-2xl">
           {frontText}
         </h3>
         <div className="flex justify-center gap-12 sm:flex sm:flex-col">
