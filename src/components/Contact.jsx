@@ -23,13 +23,13 @@ const Contact = ({
   return (
     <div>
       <div className="bg-white">
-        <h1 className="text-[150px] text-slate-200 text-center font-semibold">
+        <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}
         </h1>
         <h3 className="font-semibold text-4xl text-center relative bottom-32">
           {frontText}
         </h3>
-        <div className="flex justify-center gap-12">
+        <div className="flex justify-center gap-12 sm:flex sm:flex-col">
           <div className="flex flex-col gap-4">
             <h3 className="font-semibold text-lg text-gray-600">{address}</h3>
             <p>Osun State, Nigeria</p>
@@ -59,7 +59,7 @@ const Contact = ({
           <div className="flex flex-col">
             <h3 className="font-semibold text-lg text-gray-600">{note}</h3>
             <form action="" className="flex flex-col gap-4 pt-2">
-              <div className="flex gap-2">
+              <div className="flex gap-2 sm:flex sm:flex-col">
               <input type="text" name="" id=""  
               className="border border-gray-500 rounded-md p-2 pr-28" placeholder="Name"/>
               <input type="email" name="" id=""  
