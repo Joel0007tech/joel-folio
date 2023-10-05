@@ -12,9 +12,9 @@ const Services = ({
   return (
     <div>
       <div className='flex flex-col mt-10 pb-20'>
-      <h1 className='text-[150px] text-slate-400 text-center font-semibold sm:text-2xl'>{background}</h1>
+      <h1 className='text-[150px] text-slate-400 text-center font-semibold sm:text-6xl'>{background}</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
-        <div className='flex justify-center gap-10 relative bottom-12'>
+        <div className='flex justify-center gap-10 relative bottom-12 sm:flex sm:flex-col'>
         <div className='flex flex-col gap-4 border-[3px] border-gray-500 rounded-xl bg-gray-600 p-7'>
           <CgWebsite className='text-3xl fill-green-600 text-gray-600 bg-white border rounded-md'/>
          <h3 className='font-bold text-xl '>Website Development</h3>
@@ -34,31 +34,31 @@ const Services = ({
         <div className='flex flex-col m-auto gap-5 mt-6'>
           <h3 className='text-center font-semibold text-3xl pb-5'>My Skills</h3>
           <div className='flex gap-3'>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
-            <GrReactjs className='text-[100px] fill-blue-500'/>
+            <GrReactjs className='text-[100px] fill-blue-500 sm:text-[70px]'/>
             <p className='text-center text-base font-semibold'>ReactJS</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
-            <IoLogoJavascript className='text-[100px]'/>
+            <IoLogoJavascript className='text-[100px] sm:text-[70px]'/>
             <p className='text-center text-base font-semibold'>Javascript</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
-            <BiLogoTailwindCss className='text-[100px] fill-blue-600'/>
+            <BiLogoTailwindCss className='text-[100px] fill-blue-600 sm:text-[70px]'/>
             <p className='text-center text-base font-semibold'>Tailwindcss</p>
             </div> 
           </div>
           <div className='flex justify-center gap-3'>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
-            <BiLogoCss3 className='text-[100px]'/>
+            <BiLogoCss3 className='text-[100px] sm:text-[70px]'/>
             <p className='text-center text-base font-semibold'>CSS</p>
             </div>
-            <div className='flex-col border bg-slate-200 rounded-xl p-4 ' 
+            <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
-            <BiLogoHtml5 className='text-[100px] fill-orange-500'/>
+            <BiLogoHtml5 className='text-[100px] fill-orange-500 sm:text-[70px]'/>
             <p className='text-center text-base font-semibold'>Html</p>
             </div> 
           </div>

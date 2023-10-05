@@ -18,7 +18,7 @@ const Projects = ({
       <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>{background}</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32'>{frontText}</h3>
         <div className='flex flex-col m-auto gap-7'>
-          <div className='flex gap-7'>
+          <div className='flex gap-7 sm:flex sm:flex-col'>
           <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3' 
           data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
             <img src={gpt} alt="gpt" width={500}
@@ -45,7 +45,7 @@ const Projects = ({
          </div>
           </div>
           
-          <div className='flex gap-7'>
+          <div className='flex gap-7 sm:flex sm:flex-col'>
           <div className='border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3'
           data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
             <img src={Ace} alt="ace" width={500}
