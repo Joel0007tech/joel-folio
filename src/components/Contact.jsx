@@ -3,8 +3,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import {IoLogoGithub} from "react-icons/io"
-import {LuFacebook , LuInstagram, LuMail, LuTwitter} from "react-icons/lu";
-import { Link } from "react-router-dom";
+import {LuFacebook , LuLinkedin, LuMail, LuTwitter} from "react-icons/lu";
 
 const scrollToTop = () => {
   scroll.scrollToTop({
@@ -48,11 +47,11 @@ const Contact = ({
             <div className="flex flex-col pt-4">
             <h3 className="font-semibold text-lg text-gray-600">{follow}</h3>
             <div className="flex gap-2 pt-4">
-              <Link href=""> <LuTwitter className="fill-gray-400 text-xl"/></Link>
-              <Link href=""><LuFacebook className="fill-gray-400 text-xl"/></Link>
-              <Link href=""><IoLogoGithub className="text-gray-700 text-xl"/></Link>
-              <Link href=""><LuInstagram className="fill-gray-400 text-xl"/></Link>
-              <Link href=""><LuMail className="fill-gray-400 text-xl"/></Link>
+              <a href="https://twitter.com/Jotechy"> <LuTwitter className="fill-gray-400 text-xl"/></a>
+              <a href="https://facebook.com/Joel Ajiola"><LuFacebook className="fill-gray-400 text-xl"/></a>
+              <a href="https://github.com/Joel0007tech"><IoLogoGithub className="text-gray-700 text-xl"/></a>
+              <a href=""><LuLinkedin className="fill-gray-400 text-xl"/></a>
+              <a href=""><LuMail className="fill-gray-400 text-xl"/></a>
             </div>
             </div>
           </div>

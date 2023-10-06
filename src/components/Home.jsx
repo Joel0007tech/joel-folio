@@ -7,7 +7,7 @@ import Projects from './Projects.jsx'
 import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
-import {LuFacebook , LuTwitter} from "react-icons/lu";
+import {LuLinkedin , LuTwitter} from "react-icons/lu";
 import { BiCodeAlt } from 'react-icons/bi'
 import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
@@ -54,9 +54,9 @@ const [open, setOpen] = useState(null);
                   <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
             </ul>
             <div className='flex gap-8 justify-center'>
-            <Link href='#'><LuFacebook className='fill-gray-200 text-lg'/></Link>
-            <Link href='#'><LuTwitter className='fill-gray-200 text-lg'/></Link>
-            <Link href='#'><IoLogoGithub className='fill-gray-200 text-lg'/></Link>
+            <a href='https://www.linkedin.com/in/joelajiola/'><LuLinkedin className='fill-gray-200 text-lg'/></a>
+            <a href='https://twitter.com/Jotechy'><LuTwitter className='fill-gray-200 text-lg'/></a>
+            <a href='https://github.com/Joel0007tech'><IoLogoGithub className='fill-gray-200 text-lg'/></a>
             </div>
           </nav>         
           <div className='w-full p-5 flex flex-col gap-2' data-aos="fade" data-aos-duration="1000" id='home-bg'>
