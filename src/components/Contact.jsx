@@ -67,12 +67,15 @@ const Contact = ({
               </div>
               <input type="text" name="" id=""  
               className="border border-gray-500 rounded-md p-2 pb-24 pr-28" placeholder="Tell us more about your needs"/>
+                <a href="http://" className='text-white bg border-[3px] bg-green-500 rounded-md
+              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 w-fit mt-2 m-auto'>
+                Submit</a>
             </form>
           </div>
         </div>
         <BsFillArrowUpCircleFill
           onClick={scrollToTop}
-          className="float-right text-2xl mb-2 mr-2"
+          className="float-right text-4xl mb-2 mr-2 cursor-pointer"
         />
       </div>
     </div>

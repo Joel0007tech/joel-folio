@@ -71,7 +71,7 @@ const Projects = ({
                   {dashbord}
                 </p>
                 <a
-                  href="http://"
+                  href="https://admin-dashboard-yrub.vercel.app/"
                   className="text-white bg border-[3px] bg-green-500 rounded-full relative bottom-4
               pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500"
                 >
@@ -98,7 +98,7 @@ const Projects = ({
                   {GPT}
                 </p>
                 <a
-                  href="http://"
+                  href="https://gpt-3-pied.vercel.app/"
                   className="text-white bg border-[3px] bg-green-500 rounded-full relative bottom-4
               pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500"
                 >
@@ -114,7 +114,7 @@ const Projects = ({
             >
               <img
                 src={ctMaid}
-                alt="admin"
+                alt="ctM"
                 width={500}
                 className="border rounded-xl"
               />
@@ -123,7 +123,7 @@ const Projects = ({
                   {ctmaid}
                 </p>
                 <a
-                  href="http://"
+                  href="https://ct-maid-synergy.vercel.app/"
                   className="text-white bg border-[3px] bg-green-500 rounded-full relative bottom-4
               pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500"
                 >
@@ -151,7 +151,7 @@ const Projects = ({
                   {ace}
                 </p>
                 <a
-                  href="http://"
+                  href="https://practice-project-chi.vercel.app/"
                   className="text-white bg border-[3px] bg-green-500 rounded-full relative bottom-4
               pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500"
                 >
@@ -176,7 +176,7 @@ const Projects = ({
                   {hoobank}
                 </p>
                 <a
-                  href="http://"
+                  href="https://bank-app-ten-mu.vercel.app/"
                   className="text-white bg border-[3px] bg-green-500 rounded-full relative bottom-4
                  pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500"
                 >
