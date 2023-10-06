@@ -21,7 +21,7 @@ const Contact = ({
 }) => {
   return (
     <div>
-      <div className="bg-white sm:p-3">
+      <div className="bg-white sm:p-5">
         <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}
         </h1>
@@ -50,8 +50,8 @@ const Contact = ({
               <a href="https://twitter.com/Jotechy"> <LuTwitter className="fill-gray-400 text-xl"/></a>
               <a href="https://facebook.com/Joel Ajiola"><LuFacebook className="fill-gray-400 text-xl"/></a>
               <a href="https://github.com/Joel0007tech"><IoLogoGithub className="text-gray-700 text-xl"/></a>
-              <a href=""><LuLinkedin className="fill-gray-400 text-xl"/></a>
-              <a href=""><LuMail className="fill-gray-400 text-xl"/></a>
+              <a href="https://www.linkedin.com/in/joelajiola/"><LuLinkedin className="fill-gray-400 text-xl"/></a>
+              <a href="ajiolajoel@gmail.com"><LuMail className="fill-gray-400 text-xl"/></a>
             </div>
             </div>
           </div>
@@ -60,9 +60,9 @@ const Contact = ({
             <form action="" className="flex flex-col gap-4 pt-2">
               <div className="flex gap-2 sm:flex sm:flex-col">
               <input type="text" name="" id=""  
-              className="border border-gray-500 rounded-md p-2 pr-28" placeholder="Name"/>
+              className="border border-gray-500 rounded-md p-2 pr-28" placeholder="Name" required/>
               <input type="email" name="" id=""  
-              className="border border-gray-500 rounded-md p-2 pr-28" placeholder="Email"/>
+              className="border border-gray-500 rounded-md p-2 pr-28" placeholder="Email" required/>
               </div>
               <input type="text" name="" id=""  
               className="border border-gray-500 rounded-md p-2 pb-24 pr-28" placeholder="Tell us more about your needs"/>
@@ -74,7 +74,7 @@ const Contact = ({
         </div>
         <BsFillArrowUpCircleFill
           onClick={scrollToTop}
-          className="float-right text-4xl mb-2 mr-2 cursor-pointer"
+          className="float-right text-4xl mb-9 relative bottom-10 mr-2 cursor-pointer"
         />
       </div>
     </div>
