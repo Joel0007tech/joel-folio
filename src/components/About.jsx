@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className='flex gap-28 justify-center sm:flex sm:flex-col sm:gap-3'>
         <div className='flex flex-col sm:m-auto'>
-          <p className='text-[70px] font-bold text-slate-500'>2+</p>
+          <p className='text-[70px] font-bold text-slate-500 sm:text-center'>2+</p>
           <p className='text-md relative right-4 font-semibold text-slate-400'>Years Experience</p>
         </div>
         <div className='flex flex-col sm:m-auto'>
@@ -40,11 +40,11 @@ const About = () => {
         </div>
         <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>10+</p>
-          <p className='text-md text-center font-semibold text-slate-400'>Projects Done</p>
+          <p className='text-md text-center font-semibold text-slate-400 relative right-4'>Projects Done</p>
         </div>
         <div className='flex flex-col sm:m-auto'>
           <p className='text-[70px] font-bold text-slate-500'>2</p>
-          <p className='text-md text-center font-semibold text-slate-400'>Awards</p>
+          <p className='text-md text-center font-semibold text-slate-400 relative right-4'>Certificates</p>
         </div>
       </div>
       </div>

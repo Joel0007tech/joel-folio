@@ -21,7 +21,7 @@ const Contact = ({
 }) => {
   return (
     <div>
-      <div className="bg-white sm:p-5">
+      <div className="bg-white sm:p-4">
         <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}
         </h1>
@@ -66,9 +66,9 @@ const Contact = ({
               </div>
               <input type="text" name="" id=""  
               className="border border-gray-500 rounded-md p-2 pb-24 pr-28" placeholder="Tell us more about your needs"/>
-                <a href="http://" className='text-white bg border-[3px] bg-green-500 rounded-md
-              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 w-fit mt-2 m-auto'>
-                Submit</a>
+               
+                <input type="submit" value="Submit" className='text-white bg border-[3px] bg-green-500 rounded-md
+              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 w-fit mt-2 m-auto'/>
             </form>
           </div>
         </div>
