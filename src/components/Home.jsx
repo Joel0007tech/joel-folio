@@ -72,7 +72,7 @@ const [open, setOpen] = useState(null);
         </div>
         <div className='sm:block hidden'>
             <div className='flex p-3 justify-between'>
-              <Link href='https://github.com/Joel0007tech' target='_blank' className='text-2xl text-white'>{mobileLogo}</Link>
+              <a href='https://github.com/Joel0007tech' target='_blank' className='text-2xl text-white'>{mobileLogo}</a>
               <BiCodeAlt className='text-2xl text-white relative float-right' onClick={()=> setOpen(!open)}/>
               </div>
               {open && (
