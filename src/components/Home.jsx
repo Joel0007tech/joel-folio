@@ -8,7 +8,7 @@ import Services from './Services.jsx'
 import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
 import {IoLogoGithub} from "react-icons/io"
 import {LuFacebook , LuTwitter} from "react-icons/lu";
-import { BiMenu } from 'react-icons/bi'
+import { BiCodeAlt } from 'react-icons/bi'
 import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
@@ -22,7 +22,7 @@ const Home = ({
     projects= "Projects",
     services= "My Services",
     testimonial= "What Our Client Says",
-    mobileLogo="< />"
+    mobileLogo="{.J.}"
 }) => {
 
   
@@ -71,12 +71,11 @@ const [open, setOpen] = useState(null);
           </div>
         </div>
         <div className='sm:block hidden'>
-            <div className='flex p-5 justify-between'>
-              <Link href='#' className='text-2xl text-white'>{mobileLogo}</Link>
-              <BiMenu className='text-2xl text-white relative float-right' onClick={()=> setOpen(!open)}/>
+            <div className='flex p-3 justify-between'>
+              <Link href='https://github.com/Joel0007tech' target='_blank' className='text-2xl text-white'>{mobileLogo}</Link>
+              <BiCodeAlt className='text-2xl text-white relative float-right' onClick={()=> setOpen(!open)}/>
               </div>
-              {
-                (open && (
+              {open && (
                   <ul className='flex flex-col gap-6 p-10 mt-12 sm:mt-0' data-aos="fade-up" data-aos-duration="1000">
                   <li className='text-white text-base text-center hover:text-green-900'>
                     <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
@@ -91,7 +90,6 @@ const [open, setOpen] = useState(null);
                   <li className='text-white text-base text-center hover:text-green-900'>
                     <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
               </ul>
-                )
                 )
               }
         </div>
