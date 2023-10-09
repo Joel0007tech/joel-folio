@@ -1,16 +1,10 @@
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Services from "./Services";
-import Testimonial from "./Testimonial";
 
-export default {
-    Home,
-    About,
-    Contact,
-    Projects,
-    Services,
-    Testimonial
-}
 
+export const NavLinks = [
+    {destination: '/', text: "Home"},
+    {destination: 'about', text: "About Me"},
+    {destination: 'services', text: "My services"},
+    {destination: 'projects', text: "My projects"},
+    {destination: 'testimonial', text: "what our client says"},
+    {destination: 'contact', text:"Contact Me"}
+];

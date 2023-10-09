@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
+
 import Testimonial from './Testimonial.jsx'
 import Contact from './Contact.jsx'
 import About from './About'
@@ -13,15 +13,11 @@ import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { NavLinks } from './index.js'
 Aos.init();
 
-const Home = ({
-    home= "Home",
-    about= "About Me",
-    contact= "Contact Me",
-    projects= "Projects",
-    services= "My Services",
-    testimonial= "What Our Client Says",
+
+const Home = ({ 
     mobileLogo="{.J.}"
 }) => {
 
@@ -39,19 +35,12 @@ const [open, setOpen] = useState(null);
             data-aos-delay="200" data-aos-duration="1000"/>
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
-            <ul className='flex flex-col gap-6 p-10 mt-12' data-aos="fade-up" data-aos-duration="1000">
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="about" className='cursor-pointer' smooth={true} duration={500}>{about}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="services" className='cursor-pointer' smooth={true} duration={500}>{services}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="projects" className='cursor-pointer' smooth={true} duration={500}>{projects}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="testimonial" className='cursor-pointer' smooth={true} duration={500}>{testimonial}</ScrollLink></li>
-                <li className='text-white text-base text-center hover:text-green-900'>
-                  <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
+            <ul className='flex flex-col gap-6 p-10' data-aos="fade-up" data-aos-duration="1000">
+                  {NavLinks.map((lists) => (
+                 <li key={lists} className='text-white text-center hover:text-green-500'>
+                  <ScrollLink to={lists.destination} className=' cursor-pointer' smooth={true} duration={500}>{lists.text}</ScrollLink>
+                 </li> )
+                  )}
             </ul>
             <div className='flex gap-8 justify-center'>
             <a href='https://www.linkedin.com/in/joelajiola/'><LuLinkedin className='fill-gray-200 text-lg'/></a>
@@ -77,18 +66,11 @@ const [open, setOpen] = useState(null);
               </div>
               {open && (
                   <ul className='flex flex-col gap-6 p-10 mt-12 sm:mt-0' data-aos="fade-up" data-aos-duration="1000">
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="/" className=' cursor-pointer' smooth={true} duration={500}>{home}</ScrollLink></li>
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="about" className='cursor-pointer' smooth={true} duration={500}>{about}</ScrollLink></li>
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="services" className='cursor-pointer' smooth={true} duration={500}>{services}</ScrollLink></li>
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="projects" className='cursor-pointer' smooth={true} duration={500}>{projects}</ScrollLink></li>
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="testimonial" className='cursor-pointer' smooth={true} duration={500}>{testimonial}</ScrollLink></li>
-                  <li className='text-white text-base text-center hover:text-green-900'>
-                    <ScrollLink to="contact" className='cursor-pointer' smooth={true} duration={500}>{contact}</ScrollLink></li>
+                  {NavLinks.map((lists) => (
+                 <li key={lists} className='text-white hover:text-green-500 text-center'>
+                  <ScrollLink to={lists.destination} className=' cursor-pointer' smooth={true} duration={500}>{lists.text}</ScrollLink>
+                 </li> )
+                  )}
               </ul>
                 )
               }
