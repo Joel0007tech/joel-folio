@@ -1,21 +1,11 @@
 import React from "react";
-import gpt from "../assets/gpt3.png";
-import dashboard from "../assets/adminDashboard.png";
-import Ace from "../assets/ace project.png";
-import movie from "../assets/hoobank project.png";
-import youtube from "../assets/youtube clone.png";
-import ctMaid from "../assets/ctmaid project.png";
+
 import {BiSolidChevronsRight} from "react-icons/bi"
+import { projectDetails } from ".";
 
 const Projects = ({
   background = "PROJECTS",
   frontText = "Want to see my past works?",
-  GPT = "chatGPT-3 Project",
-  dashbord = "Dashboard Project",
-  ace = "Ace Project",
-  hoobank = "Hoobank Project",
-  youTube = "Youtube Clone",
-  ctmaid ="Ctmaid Project",
   gitLink="View More"
 }) => {
   return (
@@ -27,7 +17,7 @@ const Projects = ({
         <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl">
           {frontText}
         </h3>
-        <div className="flex flex-col m-auto gap-7">
+        {/* <div className="flex flex-col m-auto gap-7">
         <div className="flex gap-7 sm:flex sm:flex-col">
             <div
               className="border-[5px] bg-gray-500 border-gray-500 rounded-lg p-3 flex-col gap-3"
@@ -185,7 +175,21 @@ const Projects = ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+<div className="grid grid-cols-3 gap-3 justify-center p-5 sm:flex sm:flex-col sm:gap-2">
+{
+          projectDetails.map((items) =>
+  
+             <li key={items} className="flex flex-col">
+              <div className="flex border rounded-xl bg-slate-500 flex-col w-fit p-7 m-auto">
+              <img src={items.image} alt="img" width={500} className="border rounded-xl m-auto"/>
+                  <span>{items.text}</span>
+              </div>
+                  
+             </li>)        
+        }
+</div>
+        
         <div className="bg-gray-500 text-white text-base font-semibold border
          w-fit m-auto p-3 mt-4 rounded-md pr-7 pl-7 flex gap-1">
           <a href="https://github.com/Joel0007tech" target="_blank">{gitLink}</a>
