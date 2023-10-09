@@ -8,3 +8,4 @@ export const NavLinks = [
     {destination: 'testimonial', text: "what our client says"},
     {destination: 'contact', text:"Contact Me"}
 ];
+
