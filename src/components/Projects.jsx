@@ -1,12 +1,12 @@
 import React from "react";
 
-import {BiSolidChevronsRight} from "react-icons/bi"
+import { BiSolidChevronsRight } from "react-icons/bi";
 import { projectDetails } from ".";
 
 const Projects = ({
   background = "PROJECTS",
   frontText = "Want to see my past works?",
-  gitLink="View More"
+  gitLink = "View More",
 }) => {
   return (
     <div>
@@ -176,26 +176,34 @@ const Projects = ({
             </div>
           </div>
         </div> */}
-<div className="grid grid-cols-3 gap-3 justify-center p-5 sm:flex sm:flex-col sm:gap-2">
-{
-          projectDetails.map((items) =>
-  
-             <li key={items} className="flex flex-col">
+        <div className="grid grid-cols-3 gap-3 justify-center p-5 sm:flex sm:flex-col sm:gap-2 ">
+          {projectDetails.map((items) => (
+            <li key={items} className="flex flex-col">
               <div className="flex border rounded-xl bg-slate-500 flex-col w-fit p-7 m-auto">
-              <img src={items.image} alt="img" width={500} className="border rounded-xl m-auto"/>
-                  <span>{items.text}</span>
+                <img
+                  src={items.image}
+                  alt="img"
+                  width={500}
+                  className="border rounded-xl m-auto"
+                />
+                <div className="flex justify-between">
+                <span>{items.text}</span>
+                <span>{items.link}</span>
+                </div>
               </div>
-                  
-             </li>)        
-        }
-</div>
-        
-        <div className="bg-gray-500 text-white text-base font-semibold border
-         w-fit m-auto p-3 mt-4 rounded-md pr-7 pl-7 flex gap-1">
-          <a href="https://github.com/Joel0007tech" target="_blank">{gitLink}</a>
-          <BiSolidChevronsRight className="relative top-1"/>
-         </div>
-        
+            </li>
+          ))}
+        </div>
+
+        <div
+          className="bg-gray-500 text-white text-base font-semibold border
+         w-fit m-auto p-3 mt-4 rounded-md pr-7 pl-7 flex gap-1"
+        >
+          <a href="https://github.com/Joel0007tech" target="_blank">
+            {gitLink}
+          </a>
+          <BiSolidChevronsRight className="relative top-1" />
+        </div>
       </div>
     </div>
   );
