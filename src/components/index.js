@@ -5,8 +5,6 @@ import Ace from "../assets/ace project.png";
 import movie from "../assets/hoobank project.png";
 import youtube from "../assets/youtube clone.png";
 import ctMaid from "../assets/ctmaid project.png";
-import gptLink from "https://gpt-3-pied.vercel.app/"
-
 
 
 export const NavLinks = [
@@ -19,10 +17,16 @@ export const NavLinks = [
 ];
 
 export const projectDetails =[
-    {image: gpt, text: "chatGPT-3 Project", link:gptLink},
-    {image: dashboard, text: "Dashboard Project", link:"https://admin-dashboard-yrub.vercel.app/"},
-    {image: youtube, text: "Youtube Clone", link:"https://you-tube-clone-beta-nine.vercel.app/"},
-    {image: Ace, text: "Ace Project", link:"https://practice-project-chi.vercel.app/"},
-    {image: movie, text: "Hoobank Project", link:"https://bank-app-ten-mu.vercel.app/"},
-    {image: ctMaid, text: "CTMaid website", link:"https://ct-maid-synergy.vercel.app/"},
+    {image: gpt, text: "chatGPT-3 Project",
+     link:"https://gpt-3-pied.vercel.app/", linkText:"CLICK HERE"},
+    {image: dashboard, text: "Dashboard Project",
+     link:"https://admin-dashboard-yrub.vercel.app/", linkText:"CLICK HERE"},
+    {image: youtube, text: "Youtube Clone",
+     link:"https://you-tube-clone-beta-nine.vercel.app/", linkText:"CLICK HERE"},
+    {image: Ace, text: "Ace Project",
+     link:"https://practice-project-chi.vercel.app/", linkText:"CLICK HERE"},
+    {image: movie, text: "Hoobank Project",
+     link:"https://bank-app-ten-mu.vercel.app/", linkText:"CLICK HERE"},
+    {image: ctMaid, text: "CTMaid website",
+     link:"https://ct-maid-synergy.vercel.app/", linkText:"CLICK HERE"},
 ]

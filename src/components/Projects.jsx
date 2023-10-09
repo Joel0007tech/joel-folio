@@ -176,10 +176,10 @@ const Projects = ({
             </div>
           </div>
         </div> */}
-        <div className="grid grid-cols-3 gap-3 justify-center p-5 sm:flex sm:flex-col sm:gap-2 ">
+        <div className="grid grid-cols-3 gap-3 justify-center 2xl:p-2 sm:flex sm:flex-col sm:gap-2 ">
           {projectDetails.map((items) => (
             <li key={items} className="flex flex-col">
-              <div className="flex border rounded-xl bg-slate-500 flex-col w-fit p-7 m-auto">
+              <div className="flex border rounded-xl bg-slate-500 flex-col w-fit p-5 m-auto">
                 <img
                   src={items.image}
                   alt="img"
@@ -188,7 +188,7 @@ const Projects = ({
                 />
                 <div className="flex justify-between">
                 <span>{items.text}</span>
-                <span>{items.link}</span>
+                <span><a href={items.link}>{items.linkText}</a></span>
                 </div>
               </div>
             </li>
