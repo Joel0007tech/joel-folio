@@ -186,9 +186,10 @@ const Projects = ({
                   width={500}
                   className="border rounded-xl m-auto"
                 />
-                <div className="flex justify-between">
-                <span>{items.text}</span>
-                <span><a href={items.link}>{items.linkText}</a></span>
+                <div className="flex justify-between pt-2">
+                <span className="text-white text-lg font-semibold">{items.text}</span>
+                <span><a href={items.link} className="text-white text-sm font-normal hover:text-green-500 hover:bg-gray-700
+                 bg-green-500 border-[3px] rounded-full p-3 pr-7 pl-7 relative bottom-1">{items.linkText}</a></span>
                 </div>
               </div>
             </li>
