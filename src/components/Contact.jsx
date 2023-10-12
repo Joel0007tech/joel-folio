@@ -15,9 +15,9 @@ const scrollToTop = () => {
 const Contact = ({
   background = "CONTACT",
   frontText = "Get In Touch",
-  address = "ADDRESS",
-  note = "SEND US A NOTE",
-  follow="FOLLOW ME"
+  address = "address",
+  note = "send us a note",
+  follow="follow me"
 }) => {
   return (
     <div>
@@ -30,7 +30,7 @@ const Contact = ({
         </h3>
         <div className="flex justify-center gap-12 sm:flex sm:flex-col">
           <div className="flex flex-col gap-4">
-            <h3 className="font-semibold text-lg text-gray-600">{address}</h3>
+            <h3 className="font-semibold text-lg text-gray-600">{address.toUpperCase()}</h3>
             <p>Osun State, Nigeria</p>
             <div className="flex gap-2">
               <BsFillTelephoneFill className="fill-green-500 text-lg relative top-1" />
@@ -45,7 +45,7 @@ const Contact = ({
               </p>
             </div>
             <div className="flex flex-col pt-4">
-            <h3 className="font-semibold text-lg text-gray-600">{follow}</h3>
+            <h3 className="font-semibold text-lg text-gray-600">{follow.toUpperCase()}</h3>
             <div className="flex gap-2 pt-4">
               <a href="https://twitter.com/Jotechy"> <LuTwitter className="fill-gray-400 text-xl"/></a>
               <a href="https://facebook.com/Joel Ajiola"><LuFacebook className="fill-gray-400 text-xl"/></a>
@@ -56,7 +56,7 @@ const Contact = ({
             </div>
           </div>
           <div className="flex flex-col">
-            <h3 className="font-semibold text-lg text-gray-600">{note}</h3>
+            <h3 className="font-semibold text-lg text-gray-600">{note.toUpperCase()}</h3>
             <form action="" className="flex flex-col gap-4 pt-2">
               <div className="flex gap-2 sm:flex sm:flex-col">
               <input type="text" name="" id=""  

@@ -46,7 +46,7 @@ const Projects = ({
          w-fit m-auto p-3 mt-4 rounded-md pr-7 pl-7 flex gap-1"
         >
           <a href="https://github.com/Joel0007tech" target="_blank">
-            {gitLink}
+            {gitLink.toLowerCase()}
           </a>
           <BiSolidChevronsRight className="relative top-1" />
         </div>
