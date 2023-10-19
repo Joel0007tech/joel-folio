@@ -24,7 +24,9 @@ const About = () => {
             Email : <span  className='font-normal text-green-500'>ajiolajoel@gmail.com</span> </p>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Address : <span  className='font-normal'>Osun, Nigeria</span></p>
-          <a href="http://" className='text-white bg border-[3px] bg-green-500 rounded-full
+          <a href="https://docs.google.com/document/d/1-N-G5tnN77zWEimodSCgju08uvmWCro0/edit?usp=sharing&ouid=104879813027514012036&rtpof=true&sd=true"
+            target='_blank'
+            className='text-white bg border-[3px] bg-green-500 rounded-full
               pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 mt-3'>
                 Download CV</a>
          </div>
