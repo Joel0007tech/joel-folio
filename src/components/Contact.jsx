@@ -64,7 +64,7 @@ const Contact = ({
                 <a href="https://www.linkedin.com/in/joelajiola/">
                   <LuLinkedin className="fill-gray-400 text-xl" />
                 </a>
-                <a href="ajiolajoel@gmail.com">
+                <a href="mailto:ajiolajoel@gmail.com">
                   <LuMail className="fill-gray-400 text-xl" />
                 </a>
               </div>

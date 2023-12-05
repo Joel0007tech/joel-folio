@@ -11,7 +11,6 @@ import Contact from './components/Contact'
 const App = () => {
   return (
     <div>
-   
       <BrowserRouter>
     <Routes>
       <Route path='/' element ={<Home/>} />

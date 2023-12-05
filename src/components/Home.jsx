@@ -13,7 +13,7 @@ import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { NavLinks } from './index.js'
+import { NavLinks } from '.'
 Aos.init();
 
 

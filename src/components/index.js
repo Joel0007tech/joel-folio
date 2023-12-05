@@ -2,7 +2,7 @@
 import gpt from "../assets/gpt3.png";
 import dashboard from "../assets/adminDashboard.png";
 import Ace from "../assets/ace project.png";
-import movie from "../assets/hoobank project.png";
+import hoobank from "../assets/hoobank project.png";
 import youtube from "../assets/youtube clone.png";
 import ctMaid from "../assets/ctmaid project.png";
 
@@ -25,7 +25,7 @@ export const projectDetails =[
      link:"https://you-tube-clone-beta-nine.vercel.app/", linkText:"CLICK HERE"},
     {image: Ace, text: "Ace Project",
      link:"https://practice-project-chi.vercel.app/", linkText:"CLICK HERE"},
-    {image: movie, text: "Hoobank Project",
+    {image: hoobank, text: "Hoobank Project",
      link:"https://bank-app-ten-mu.vercel.app/", linkText:"CLICK HERE"},
     {image: ctMaid, text: "CTMaid website",
      link:"https://ct-maid-synergy.vercel.app/", linkText:"CLICK HERE"},
