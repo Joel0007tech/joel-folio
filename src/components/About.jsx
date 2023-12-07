@@ -20,8 +20,8 @@ const About = () => {
          <div className='flex flex-col gap-4'>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Name : <span  className='font-normal'>Joel .A.</span></p>
-          <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
-            Email : <span  className='font-normal text-green-500'>ajiolajoel@gmail.com</span> </p>
+          <a  href='mailto:ajiolajoel@gmail.com' className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
+            Email : <span  className='font-normal text-green-500'>ajiolajoel@gmail.com</span> </a>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Address : <span  className='font-normal'>Osun, Nigeria</span></p>
           <a href="https://docs.google.com/document/d/1-N-G5tnN77zWEimodSCgju08uvmWCro0/edit?usp=sharing&ouid=104879813027514012036&rtpof=true&sd=true"
