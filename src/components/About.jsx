@@ -35,19 +35,19 @@ const About = () => {
       <div className='flex gap-28 justify-center sm:flex sm:flex-col sm:gap-3'>
         <div className='flex flex-col sm:m-auto'>
         <CountUp end={2} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md relative right-4 font-semibold text-slate-400'>Years Experience</p>
+          <p className='text-md relative font-semibold text-slate-400'>Years Experience</p>
         </div>
         <div className='flex flex-col sm:m-auto'>
          <CountUp end={3} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md relative right-4 font-semibold text-slate-400'>Happy Clients</p>
+          <p className='text-md relative font-semibold text-slate-400'>Happy Clients</p>
         </div>
         <div className='flex flex-col sm:m-auto'>
           <CountUp end={10} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md text-center font-semibold text-slate-400 relative right-4 '>Projects Done</p>
+          <p className='text-md text-center font-semibold text-slate-400 relative'>Projects Done</p>
         </div>
         <div className='flex flex-col sm:m-auto'>
           <CountUp end={2} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-        <p className='text-md text-center font-semibold text-slate-400 relative right-4 sm:items-center'>Certificates</p>
+        <p className='text-md text-center font-semibold text-slate-400 relative'>Certificates</p>
         </div>
       </div>
       </div>
