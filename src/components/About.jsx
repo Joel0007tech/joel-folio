@@ -3,7 +3,7 @@ import  CountUp  from 'react-countup';
 import { useState } from 'react';
 
 const About = () => {
-const [counter, setCounter] = useState(true);
+const [counter, setCounter] = useState(false);
 
 function handleAction() {
   setCounter(!counter)
@@ -39,38 +39,37 @@ function handleAction() {
                 Download CV</a>
          </div>
       </div>
-     <div>
+      <button onClick={handleAction} className='bg-green-500'>Click me</button>
       <div className='pt-[0.4px] bg-green-500'/>
-      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-10 m-5' 
-      onScroll={handleAction}>
+      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-32 sm:gap-10 m-5'>
         {counter && 
         <>
         <div className='flex flex-col'>
-        <div className='flex justify-center'>
-       <CountUp start={0} end={10} duration={5}/>
+        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
+       <CountUp start={0} end={2} duration={5}/>
        +
         </div>
-        <p className='sm:text-center'>clients</p>
+        <p className='sm:text-center text-lg font-normal'>clients</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
        <CountUp start={0} end={3} duration={5}/>
        +
         </div>
-       <p className='sm:text-center'>years of experience</p>
+       <p className='sm:text-center text-lg font-normal'>years of experience</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
        <CountUp start={0} end={2} duration={5}/>
         </div>
-        <p className='sm:text-center'>certifications</p>
+        <p className='sm:text-center text-lg font-normal'>certifications</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
        <CountUp start={0} end={10} duration={5}/>
        +
         </div>
-        <p className='sm:text-center'>projects done</p>
+        <p className='sm:text-center text-lg font-normal'>projects done</p>
       </div>
       </> 
         }
@@ -78,7 +77,6 @@ function handleAction() {
       <div className='pt-[0.4px] bg-green-500'/>
      </div>
       </div>
-    </div>
   )
 }
 
