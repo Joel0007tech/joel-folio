@@ -8,7 +8,6 @@ const [counter, setCounter] = useState(false);
 function handleAction() {
   setCounter(!counter)
 }
-
   return (
     <div>
       <div className='p-3 flex flex-col bg-white'>
@@ -39,42 +38,45 @@ function handleAction() {
                 Download CV</a>
          </div>
       </div>
-      <button onClick={handleAction} className='bg-green-500'>Click me</button>
-      <div className='pt-[0.4px] bg-green-500'/>
-      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-32 sm:gap-10 m-5'>
+      <button onClick={handleAction} className='bg-green-500 text-white border rounded-3xl
+       p-3 mb-3 font-semibold'>CHECK MY STAT</button>
         {counter && 
         <>
+        <div className='pt-[0.4px] bg-green-500'/>
+        <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-32 sm:gap-10 m-5'>
         <div className='flex flex-col'>
         <div className='flex justify-center text-7xl font-semibold text-gray-600'>
-       <CountUp start={0} end={2} duration={5}/>
+       <CountUp start={0} end={2} duration={2}/>
        +
         </div>
         <p className='sm:text-center text-lg font-normal'>clients</p>
       </div>
       <div className='flex flex-col'>
         <div className='flex justify-center text-7xl font-semibold text-gray-600'>
-       <CountUp start={0} end={3} duration={5}/>
+       <CountUp start={0} end={3} duration={2}/>
        +
         </div>
        <p className='sm:text-center text-lg font-normal'>years of experience</p>
       </div>
       <div className='flex flex-col'>
         <div className='flex justify-center text-7xl font-semibold text-gray-600'>
-       <CountUp start={0} end={2} duration={5}/>
+       <CountUp start={0} end={2} duration={2}/>
         </div>
         <p className='sm:text-center text-lg font-normal'>certifications</p>
       </div>
       <div className='flex flex-col'>
         <div className='flex justify-center text-7xl font-semibold text-gray-600'>
-       <CountUp start={0} end={10} duration={5}/>
+       <CountUp start={0} end={10} duration={2}/>
        +
         </div>
         <p className='sm:text-center text-lg font-normal'>projects done</p>
       </div>
-      </> 
-        }
       </div>
       <div className='pt-[0.4px] bg-green-500'/>
+      </> 
+        }
+      
+      
      </div>
       </div>
   )
