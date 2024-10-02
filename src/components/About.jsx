@@ -40,38 +40,42 @@ function handleAction() {
          </div>
       </div>
      <div>
-      <div className='pt-1 pr-1 bg-green-500' onScroll={handleAction}/>
-      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center' >
+      <div className='pt-[0.4px] bg-green-500'/>
+      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-10 m-5' 
+      onScroll={handleAction}>
         {counter && 
         <>
         <div className='flex flex-col'>
-        <div>
+        <div className='flex justify-center'>
        <CountUp start={0} end={10} duration={5}/>
        +
         </div>
+        <p className='sm:text-center'>clients</p>
       </div>
       <div className='flex flex-col'>
-        <div>
-       <CountUp start={0} end={10} duration={5}/>
+        <div className='flex justify-center'>
+       <CountUp start={0} end={3} duration={5}/>
        +
         </div>
+       <p className='sm:text-center'>years of experience</p>
       </div>
       <div className='flex flex-col'>
-        <div>
-       <CountUp start={0} end={10} duration={5}/>
-       +
+        <div className='flex justify-center'>
+       <CountUp start={0} end={2} duration={5}/>
         </div>
+        <p className='sm:text-center'>certifications</p>
       </div>
       <div className='flex flex-col'>
-        <div>
+        <div className='flex justify-center'>
        <CountUp start={0} end={10} duration={5}/>
        +
         </div>
+        <p className='sm:text-center'>projects done</p>
       </div>
       </> 
         }
       </div>
-      <div className='pt-1 pr-1 border border-r-2 bg-green-500'/>
+      <div className='pt-[0.4px] bg-green-500'/>
      </div>
       </div>
     </div>
