@@ -1,7 +1,14 @@
 import React from 'react'
-import  CountUp  from 'react-countup'
+import  CountUp  from 'react-countup';
+import { useState } from 'react';
 
 const About = () => {
+const [counter, setCounter] = useState(true);
+
+function handleAction() {
+  setCounter(!counter)
+}
+
   return (
     <div>
       <div className='p-3 flex flex-col bg-white'>
@@ -33,32 +40,36 @@ const About = () => {
          </div>
       </div>
      <div>
-      <div className='pt-1 pr-1 bg-green-500'/>
-      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center'>
+      <div className='pt-1 pr-1 bg-green-500' onScroll={handleAction}/>
+      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center' >
+        {counter && 
+        <>
         <div className='flex flex-col'>
-          <div>
-         <CountUp start={0} end={10} duration={5}/>
-         +
-          </div>
+        <div>
+       <CountUp start={0} end={10} duration={5}/>
+       +
         </div>
-        <div className='flex flex-col'>
-          <div>
-         <CountUp start={0} end={10} duration={5}/>
-         +
-          </div>
+      </div>
+      <div className='flex flex-col'>
+        <div>
+       <CountUp start={0} end={10} duration={5}/>
+       +
         </div>
-        <div className='flex flex-col'>
-          <div>
-         <CountUp start={0} end={10} duration={5}/>
-         +
-          </div>
+      </div>
+      <div className='flex flex-col'>
+        <div>
+       <CountUp start={0} end={10} duration={5}/>
+       +
         </div>
-        <div className='flex flex-col'>
-          <div>
-         <CountUp start={0} end={10} duration={5}/>
-         +
-          </div>
+      </div>
+      <div className='flex flex-col'>
+        <div>
+       <CountUp start={0} end={10} duration={5}/>
+       +
         </div>
+      </div>
+      </> 
+        }
       </div>
       <div className='pt-1 pr-1 border border-r-2 bg-green-500'/>
      </div>
