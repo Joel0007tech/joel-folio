@@ -32,24 +32,23 @@ const About = () => {
                 Download CV</a>
          </div>
       </div>
-      <div className='flex gap-28 justify-center sm:flex sm:flex-col sm:gap-3'>
-        <div className='flex flex-col sm:m-auto'>
-        <CountUp end={2} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md relative font-semibold text-slate-400'>Years Experience</p>
+     <div>
+      <div className='pt-3 pr-4 border border-r-2 bg-green-700'/>
+      <div className='flex sm:flex sm:flex-col'>
+        <div className='flex flex-col'>
+         2
         </div>
-        <div className='flex flex-col sm:m-auto'>
-         <CountUp end={3} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md relative font-semibold text-slate-400'>Happy Clients</p>
+        <div className='flex flex-col'>
+         2
         </div>
-        <div className='flex flex-col sm:m-auto'>
-          <CountUp end={10} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-          <p className='text-md text-center font-semibold text-slate-400 relative'>Projects Done</p>
+        <div className='flex flex-col'>
+         2
         </div>
-        <div className='flex flex-col sm:m-auto'>
-          <CountUp end={2} duration={5} className='text-slate-500 font-bold text-[70px] sm:text-center'/>
-        <p className='text-md text-center font-semibold text-slate-400 relative'>Certificates</p>
+        <div className='flex flex-col'>
+         2
         </div>
       </div>
+     </div>
       </div>
     </div>
   )
