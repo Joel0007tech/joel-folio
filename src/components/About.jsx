@@ -33,21 +33,34 @@ const About = () => {
          </div>
       </div>
      <div>
-      <div className='pt-3 pr-4 border border-r-2 bg-green-700'/>
-      <div className='flex sm:flex sm:flex-col'>
+      <div className='pt-1 pr-1 bg-green-500'/>
+      <div className='flex sm:flex sm:flex-col justify-center sm:justify-center'>
         <div className='flex flex-col'>
-         2
+          <div>
+         <CountUp start={0} end={10} duration={5}/>
+         +
+          </div>
         </div>
         <div className='flex flex-col'>
-         2
+          <div>
+         <CountUp start={0} end={10} duration={5}/>
+         +
+          </div>
         </div>
         <div className='flex flex-col'>
-         2
+          <div>
+         <CountUp start={0} end={10} duration={5}/>
+         +
+          </div>
         </div>
         <div className='flex flex-col'>
-         2
+          <div>
+         <CountUp start={0} end={10} duration={5}/>
+         +
+          </div>
         </div>
       </div>
+      <div className='pt-1 pr-1 border border-r-2 bg-green-500'/>
      </div>
       </div>
     </div>
