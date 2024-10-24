@@ -19,7 +19,7 @@ const Projects = ({
         </h3>
         <div className="grid grid-cols-3 gap-3 justify-center p-2 sm:flex sm:flex-col sm:gap-2">
           {projectDetails.map((items) => (
-            <li key={items} className="flex flex-col">
+            <li key={items.text} className="flex flex-col">
               <div
                 className="flex border rounded-xl bg-slate-500 flex-col w-fit p-5 m-auto"
                 data-aos="flip-right"

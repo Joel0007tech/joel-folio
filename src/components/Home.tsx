@@ -5,7 +5,7 @@ import Contact from './Contact.js'
 import About from './About.js'
 import Projects from './Projects.js'
 import Services from './Services.jsx'
-import myImage from "../assets/FB_IMG_1632361671640 (2).jpg"
+const myImage = ("../assets/FB_IMG_1632361671640 (2).jpg"),
 import {IoLogoGithub} from "react-icons/io"
 import {LuLinkedin , LuTwitter} from "react-icons/lu";
 import { BiCodeAlt } from 'react-icons/bi'
@@ -13,7 +13,7 @@ import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { NavLinks } from './index.ts/index.js'
+import { NavLinks } from './index.ts'
 Aos.init();
 
 
