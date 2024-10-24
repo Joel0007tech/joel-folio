@@ -16,7 +16,7 @@ export const NavLinks = [
     {destination: 'contact', text:"Contact Me"}
 ];
 
-export const projectDetails =[
+export const projectDetails:{[key: string]: ProjectItem} ={
     {image: gpt, text: "ChatGPT-3 Project",
      link:"https://gpt-3-pied.vercel.app/", linkText:"CLICK HERE"},
     {image: dashboard, text: "Dashboard Project",
@@ -29,4 +29,4 @@ export const projectDetails =[
      link:"https://bank-app-ten-mu.vercel.app/", linkText:"CLICK HERE"},
     {image: ctMaid, text: "CTMaid website",
      link:"https://ct-maid-synergy.vercel.app/", linkText:"CLICK HERE"},
-]
+    }
