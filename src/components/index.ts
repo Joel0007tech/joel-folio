@@ -1,10 +1,20 @@
 
-export const gpt =  ("../assets/gpt3.png")
-export const dashboard = ("../assets/adminDashboard.png")
-export const Ace = ("../assets/ace project.png")
-export const hoobank = ("../assets/hoobank project.png")
-export const youtube = ("../assets/youtube clone.png")
-export const ctMaid = ("../assets/ctmaid project.png")
+export const gpt3 =  "../assets/3.png";
+export const dashboard = "../assets/adminDashboard.png";
+export const Ace = "../assets/ace project.png";
+export const hoobank = "../assets/hoobank project.png";
+export const youtube = "../assets/youtube clone.png";
+export const ctMaid = "../assets/ctmaid project.png";
+
+
+
+//  import dashboard from "../assets/adminDashboard.png";
+//   import Ace from "../assets/ace project.png"; 
+
+//   const dashboardImage: ImageType = {
+//     src: dashboard, 
+//     alt: "Admin Dashboard Image",
+//   };
 
 
 export const NavLinks = [

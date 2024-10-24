@@ -5,7 +5,6 @@ import Contact from './Contact.js'
 import About from './About.js'
 import Projects from './Projects.js'
 import Services from './Services.jsx'
-const myImage = ("../assets/FB_IMG_1632361671640 (2).jpg"),
 import {IoLogoGithub} from "react-icons/io"
 import {LuLinkedin , LuTwitter} from "react-icons/lu";
 import { BiCodeAlt } from 'react-icons/bi'
@@ -16,6 +15,7 @@ import 'aos/dist/aos.css';
 import { NavLinks } from './index.ts'
 Aos.init();
 
+const myImage = ("../assets/FB_IMG_1632361671640 (2).jpg")
 
 const Home = ({ 
     mobileLogo="{.J.}"
@@ -37,7 +37,7 @@ const [open, setOpen] = useState(null);
             
             <ul className='flex flex-col gap-6 p-10' data-aos="fade-up" data-aos-duration="1000">
                   {NavLinks.map((lists) => (
-                 <li key={lists} className='text-white text-center hover:text-green-500'>
+                 <li key={lists.text} className='text-white text-center hover:text-green-500'>
                   <ScrollLink to={lists.destination} className=' cursor-pointer' smooth={true} duration={500}>{lists.text}</ScrollLink>
                  </li> )
                   )}
@@ -67,7 +67,7 @@ const [open, setOpen] = useState(null);
               {open && (
                   <ul className='flex flex-col gap-6 p-10 mt-12 sm:mt-0' data-aos="fade-up" data-aos-duration="1000">
                   {NavLinks.map((lists) => (
-                 <li key={lists} className='text-white hover:text-green-500 text-center'>
+                 <li key={lists.text} className='text-white hover:text-green-500 text-center'>
                   <ScrollLink to={lists.destination} className=' cursor-pointer' smooth={true} duration={500}>{lists.text}</ScrollLink>
                  </li> )
                   )}
