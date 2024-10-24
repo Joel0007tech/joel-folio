@@ -1,5 +1,5 @@
 
-export const gpt3 =  ("../assets/gpt3.png")
+export const gpt =  ("../assets/gpt3.png")
 export const dashboard = ("../assets/adminDashboard.png")
 export const Ace = ("../assets/ace project.png")
 export const hoobank = ("../assets/hoobank project.png")
@@ -16,7 +16,7 @@ export const NavLinks = [
     {destination: 'contact', text:"Contact Me"}
 ];
 
-export const projectDetails:{[key: string]: ProjectItem} ={
+export const projectDetails =[
     {image: gpt, text: "ChatGPT-3 Project",
      link:"https://gpt-3-pied.vercel.app/", linkText:"CLICK HERE"},
     {image: dashboard, text: "Dashboard Project",
@@ -29,4 +29,4 @@ export const projectDetails:{[key: string]: ProjectItem} ={
      link:"https://bank-app-ten-mu.vercel.app/", linkText:"CLICK HERE"},
     {image: ctMaid, text: "CTMaid website",
      link:"https://ct-maid-synergy.vercel.app/", linkText:"CLICK HERE"},
-    }
+]
