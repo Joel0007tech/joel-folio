@@ -1,7 +1,8 @@
 import React from "react";
 
 import { BiSolidChevronsRight } from "react-icons/bi";
-import { projectDetails } from "./index.ts";
+import { projectDetails } from "./index.js";
+
 
 const Projects = ({
   background = "PROJECTS",

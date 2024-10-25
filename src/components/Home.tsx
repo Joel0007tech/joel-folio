@@ -5,6 +5,7 @@ import Contact from './Contact.js'
 import About from './About.js'
 import Projects from './Projects.js'
 import Services from './Services.jsx'
+
 import {IoLogoGithub} from "react-icons/io"
 import {LuLinkedin , LuTwitter} from "react-icons/lu";
 import { BiCodeAlt } from 'react-icons/bi'
@@ -12,10 +13,12 @@ import { Link as ScrollLink} from 'react-scroll';
 import { Element } from 'react-scroll';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { NavLinks } from './index.ts'
+import { NavLinks } from './index.js'
 Aos.init();
 
-const myImage = ("../assets/FB_IMG_1632361671640 (2).jpg")
+
+// import {myImage} from "../assets/FB_IMG_1632361671640 (2).jpg"
+
 
 const Home = ({ 
     mobileLogo="{.J.}"
@@ -30,9 +33,9 @@ const [open, setOpen] = useState(null);
         {/* sidenav */}
         <div className='flex sm:hidden'>
           <nav className='flex flex-col bg-black p-5'>
-            
+{/*             
             <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
-            data-aos-delay="200" data-aos-duration="1000"/>
+            data-aos-delay="200" data-aos-duration="1000"/> */}
             <p className='text-white text-center mt-6 font-bold text-2xl'>Joel .A.</p>
             
             <ul className='flex flex-col gap-6 p-10' data-aos="fade-up" data-aos-duration="1000">
