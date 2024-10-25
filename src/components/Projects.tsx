@@ -9,7 +9,7 @@ const Projects = ({
   gitLink = "View More",
 }) => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="flex flex-col bg-white pb-10 sm:p-3">
         <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}

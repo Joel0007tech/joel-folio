@@ -27,7 +27,7 @@ export const NavLinks = [
 ];
 
 export const projectDetails =[
-    {image: gpt, text: "ChatGPT-3 Project",
+    {image: gpt3, text: "ChatGPT-3 Project",
      link:"https://gpt-3-pied.vercel.app/", linkText:"CLICK HERE"},
     {image: dashboard, text: "Dashboard Project",
      link:"https://admin-dashboard-yrub.vercel.app/", linkText:"CLICK HERE"},
