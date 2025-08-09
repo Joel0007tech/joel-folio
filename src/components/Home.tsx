@@ -41,8 +41,8 @@ const [open, setOpen] = useState(false);
     <div className='bg-gradient-to-b from-slate-900 to-green-600'>
 
         {/* sidenav */}
-        <div className='flex'>
-          <nav className='flex flex-col bg-black p-5 sm:hidden'>
+        <div className='flex sm:hidden'>
+          <nav className='flex flex-col bg-black p-5'>
             
             {/* <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
             data-aos-delay="200" data-aos-duration="1000"/> */}
@@ -69,7 +69,7 @@ const [open, setOpen] = useState(false);
       <FlipWords
         words={["developing", "building","crafting", "designing"]}
         duration={3000}
-        className="uppercase sm:block"
+        className="uppercase"
       />
       {" "}amazing experiences
     </div>
@@ -96,6 +96,15 @@ const [open, setOpen] = useState(false);
                 )
               }
         </div>
+        <div className="text-2xl font-bold flex flex-col justify-center">
+      I love{" "}
+      <FlipWords
+        words={["developing", "building","crafting", "designing"]}
+        duration={3000}
+        className="uppercase"
+      />
+      {" "}amazing experiences
+    </div>
         <Element name="about" data-aos="fade-up" data-aos-duration="1000">
           <About/>
         </Element>
