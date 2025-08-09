@@ -10,11 +10,11 @@ function handleAction() {
 }
   return (
     <div>
-      <div className='p-3 flex flex-col bg-white'>
+      <div className='p-3 flex flex-col bg-gradient-to-b from-green-400 to-stone-700'>
           <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>Know Me More</h3>
       <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
-         <div className='flex flex-col gap-2'>
+         <div className='flex flex-col gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
           <h3 className='text-2xl font-semibold text-green-700'>I'm Joel,
           <span className='text-3xl font-semibold white'> a Frontend Developer</span></h3>
           <p className='text-gray-400 text-md'>
@@ -25,7 +25,7 @@ function handleAction() {
           </p>
          </div>
         
-         <div className='flex flex-col gap-4'>
+         <div className='flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 p-3 border-1 rounded-xl pl-5 pr-5'>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Name : <span  className='font-normal'>Joel .A.</span></p>
           <a  href='mailto:ajiolajoel@gmail.com' className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>

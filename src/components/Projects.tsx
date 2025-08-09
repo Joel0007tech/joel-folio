@@ -12,7 +12,7 @@ const Projects = ({
 }) => {
   return (
     <div className="overflow-hidden">
-      <div className="flex flex-col bg-white pb-10 sm:p-3">
+      <div className="flex flex-col bg-gradient-to-r from-green-600 to-gray-900 pb-10 sm:p-3">
         <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
           {background}
         </h1>

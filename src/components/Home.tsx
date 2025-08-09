@@ -38,7 +38,7 @@ const Home: React.FC<HomeProps> = ({
 const [open, setOpen] = useState(false);
 
   return (
-    <div className='bg-slate-500'>
+    <div className='bg-gradient-to-b from-slate-900 to-green-600'>
 
         {/* sidenav */}
         <div className='flex sm:hidden'>
