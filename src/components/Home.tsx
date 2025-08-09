@@ -69,7 +69,7 @@ const [open, setOpen] = useState(false);
       <FlipWords
         words={["developing", "building","crafting", "designing"]}
         duration={3000}
-        className="uppercase"
+        className="uppercase sm:block"
       />
       {" "}amazing experiences
     </div>

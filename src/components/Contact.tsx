@@ -23,7 +23,7 @@ const Contact = ({
   return (
     <div>
       <div className="bg-gradient-to-b from-green-400 to-stone-700 overflow-hidden sm:p-4">
-        <h1 className="text-[150px] text-slate-200 text-center font-semibold sm:text-6xl">
+        <h1 className="text-[150px] text-white text-center font-semibold sm:text-6xl">
           {background}
         </h1>
         <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-[84px] sm:text-2xl">

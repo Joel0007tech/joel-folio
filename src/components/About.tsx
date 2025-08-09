@@ -11,7 +11,7 @@ function handleAction() {
   return (
     <div>
       <div className='p-3 flex flex-col bg-gradient-to-b from-green-400 to-stone-700'>
-          <h1 className='text-[150px] text-slate-200 text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
+          <h1 className='text-[150px] text-white text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>Know Me More</h3>
       <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
          <div className='flex flex-col gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
@@ -46,27 +46,27 @@ function handleAction() {
         <div className='pt-[0.4px] bg-green-500'/>
         <div className='flex sm:flex sm:flex-col justify-center sm:justify-center gap-32 sm:gap-10 m-5'>
         <div className='flex flex-col'>
-        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
+        <div className='flex justify-center text-7xl font-semibold text-white'>
        <CountUp start={0} end={2} duration={2}/>
        +
         </div>
         <p className='sm:text-center text-lg font-normal'>clients</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
+        <div className='flex justify-center text-7xl font-semibold text-white'>
        <CountUp start={0} end={3} duration={2}/>
        +
         </div>
        <p className='sm:text-center text-lg font-normal'>years of experience</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
+        <div className='flex justify-center text-7xl font-semibold text-white'>
        <CountUp start={0} end={2} duration={2}/>
         </div>
         <p className='sm:text-center text-lg font-normal'>certifications</p>
       </div>
       <div className='flex flex-col'>
-        <div className='flex justify-center text-7xl font-semibold text-gray-600'>
+        <div className='flex justify-center text-7xl font-semibold text-white'>
        <CountUp start={0} end={10} duration={2}/>
        +
         </div>
