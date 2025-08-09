@@ -1,11 +1,9 @@
-
 import gpt3  from "../assets/gpt3.png";
 import dashboard from "../assets/adminDashboard.png";
 import Ace  from "../assets/ace project.png";
 import hoobank from  "../assets/hoobank project.png";
 import youtube  from "../assets/youtube clone.png";
 import ctMaid from "../assets/ctmaid project.png";
-
 
 
 //  import dashboard from "../assets/adminDashboard.png";

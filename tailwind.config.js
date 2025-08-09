@@ -11,7 +11,17 @@ export default {
       'md': { 'max': '767px' },
       'sm': { 'max': '428px' },
     },
-    extend: {},
+    extend: {
+      animation: {
+        'grow-line': 'grow-line 1.5s ease forwards',
+      },
+      keyframes: {
+        'grow-line': {
+          from: { transform: 'scaleY(0)' },
+          to: { transform: 'scaleY(1)' },
+        },
+      },
+    },
   },
   plugins: [],
 };

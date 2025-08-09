@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Projects from './components/Projects'
 import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
+import Works from './components/Works'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Route path='/projects' element={<Projects/>} />
       <Route path='/testimonial' element={<Testimonial/>} />
       <Route path='/contact' element={<Contact/>} />
+      <Route path='/works' element={<Works/>} />
       </Routes>
     </BrowserRouter>
     </div>

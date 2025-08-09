@@ -24,6 +24,7 @@ function handleAction() {
             been what I do for so long
           </p>
          </div>
+        
          <div className='flex flex-col gap-4'>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2'>
             Name : <span  className='font-normal'>Joel .A.</span></p>
