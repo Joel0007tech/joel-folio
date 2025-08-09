@@ -3,6 +3,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
 import { LuFacebook, LuLinkedin, LuMail, LuTwitter } from "react-icons/lu";
 
 const scrollToTop = () => {
@@ -29,49 +30,53 @@ const Contact = ({
           {frontText}
         </h3>
         <div className="flex justify-center gap-12 sm:flex sm:flex-col">
-          <div className="flex flex-col gap-4">
-            <h3 className="font-semibold text-lg text-gray-600">
+          <div className="flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 border-none rounded-lg p-3 pr-5 pl-5">
+            <h3 className="font-semibold text-lg text-white">
               {address.toUpperCase()}
             </h3>
-            <p>Osun State, Nigeria</p>
             <div className="flex gap-2">
-              <BsFillTelephoneFill className="fill-green-500 text-lg relative top-1" />
-              <p className="text-base font-normal text-gray-500">
+              <CiLocationOn className="fill-green-300 text-3xl relative bottom-1" />
+              <p className="font-normal text-base text-white">Osun State, Nigeria</p>
+            </div>
+            
+            <div className="flex gap-2">
+              <BsFillTelephoneFill className="fill-green-500 text-2xl" />
+              <p className="text-base font-normal text-white">
                 +234-706-4289-990
               </p>
             </div>
             <div className="flex gap-2">
-              <LuMail className="fill-green-500 text-lg relative top-1" />
-              <p className="text-base font-normal text-gray-500">
+              <LuMail className="fill-green-500 text-3xl" />
+              <p className="text-base font-normal text-white">
                 ajiolajoel@gmail.com
               </p>
             </div>
             <div className="flex flex-col pt-4">
-              <h3 className="font-semibold text-lg text-gray-600">
+              <h3 className="font-semibold text-lg text-white">
                 {follow.toUpperCase()}
               </h3>
-              <div className="flex gap-2 pt-4">
+              <div className="flex gap-5 pt-4">
                 <a href="https://twitter.com/Jotechy">
                   {" "}
-                  <LuTwitter className="fill-gray-400 text-xl" />
+                  <LuTwitter className="fill-white text-xl" />
                 </a>
                 <a href="https://facebook.com/Joel Ajiola">
-                  <LuFacebook className="fill-gray-400 text-xl" />
+                  <LuFacebook className="fill-white text-xl" />
                 </a>
                 <a href="https://github.com/Joel0007tech">
-                  <IoLogoGithub className="text-gray-700 text-xl" />
+                  <IoLogoGithub className="text-white text-xl" />
                 </a>
                 <a href="https://www.linkedin.com/in/joelajiola/">
-                  <LuLinkedin className="fill-gray-400 text-xl" />
+                  <LuLinkedin className="fill-white text-xl" />
                 </a>
                 <a href="mailto:ajiolajoel@gmail.com">
-                  <LuMail className="fill-gray-400 text-xl" />
+                  <LuMail className="fill-white text-xl" />
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h3 className="font-semibold text-lg text-gray-600">
+          <div className="flex flex-col bg-gradient-to-b from-slate-900 to-zinc-800 pr-5 pl-5 rounded-lg p-3">
+            <h3 className="font-semibold text-lg text-white">
               {note.toUpperCase()}
             </h3>
             <form action="" className="flex flex-col gap-4 pt-2">
@@ -103,9 +108,9 @@ const Contact = ({
 
               <input
                 type="submit"
-                value="Submit"
-                className="text-white bg border-[3px] bg-green-500 rounded-md
-              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 w-fit mt-2 m-auto"
+                value="Send A Message ↗"
+                className="text-white bg border-1 bg-gradient-to-r   from-slate-800 to-green-700 rounded-md
+              pl-7 pr-7 p-2 text-center text-base hover:text-black hover:bg-green-500 w-fit mt-2 m-auto cursor-pointer"
               />
             </form>
           </div>
