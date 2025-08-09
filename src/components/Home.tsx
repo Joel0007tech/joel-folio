@@ -41,8 +41,8 @@ const [open, setOpen] = useState(false);
     <div className='bg-gradient-to-b from-slate-900 to-green-600'>
 
         {/* sidenav */}
-        <div className='flex sm:hidden'>
-          <nav className='flex flex-col bg-black p-5'>
+        <div className='flex'>
+          <nav className='flex flex-col bg-black p-5 sm:hidden'>
             
             {/* <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
             data-aos-delay="200" data-aos-duration="1000"/> */}
