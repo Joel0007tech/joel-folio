@@ -85,6 +85,15 @@ const [open, setOpen] = useState(false);
               <a href='https://github.com/Joel0007tech' target='_blank' className='text-2xl text-white'>{mobileLogo}</a>
               <BiCodeAlt className='text-2xl text-white relative float-right' onClick={()=> setOpen(!open)}/>
               </div>
+               <div className="text-2xl font-bold flex flex-col justify-center text-white">
+      I love{" "}
+      <FlipWords
+        words={["developing", "building","crafting", "designing"]}
+        duration={3000}
+        className="uppercase text-green-500"
+      />
+      {" "}amazing experiences
+    </div>
               {open && (
                   <ul className='flex flex-col gap-6 p-10 mt-12 sm:mt-0' data-aos="fade-up" data-aos-duration="1000">
                   {NavLinks.map((lists) => (
@@ -96,15 +105,7 @@ const [open, setOpen] = useState(false);
                 )
               }
         </div>
-        <div className="text-2xl font-bold flex flex-col justify-center">
-      I love{" "}
-      <FlipWords
-        words={["developing", "building","crafting", "designing"]}
-        duration={3000}
-        className="uppercase"
-      />
-      {" "}amazing experiences
-    </div>
+       
         <Element name="about" data-aos="fade-up" data-aos-duration="1000">
           <About/>
         </Element>
