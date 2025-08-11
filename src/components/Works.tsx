@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { projectDetails } from './index';
+import ShimmerButton from './Link1';
+import ShimmerGithub from './Github';
 
 const Works: React.FC = () => {
   useEffect(() => {
@@ -51,10 +53,12 @@ const Works: React.FC = () => {
               <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{items.text}</h3>
              <a
                       href={items.link}
-                      className="text-white text-sm flex justify-center font-normal hover:text-green-500 hover:bg-gray-700
-                 bg-green-500 border-[3px] rounded-full p-3 pr-1 pl-1 relative bottom-1 sm:p-2 sm:pl-3 sm:pr-3 sm:text-[13px] sm:font-normal"
+                      
                     >
-                      <span className='flex justify-center'>{items.linkText}</span>
+                      <div className="flex gap-2 justify-center sm:flex-col">
+                      <span ><ShimmerButton /></span>
+                        <span ><ShimmerGithub /></span>
+                      </div>
                     </a>
             </div>
           </div>

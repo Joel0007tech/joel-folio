@@ -2,7 +2,7 @@
 import React from 'react';
 
 // The main App component that renders our ShimmerButton
-export default function ShimmerButton() {
+export default function ShimmerGithub() {
   const customCss = `
     /* This is the key to the seamless animation.
       The @property rule tells the browser that '--angle' is a custom property
@@ -38,7 +38,7 @@ export default function ShimmerButton() {
           }}
         />
         <span className="relative z-10 inline-flex items-center justify-center w-full h-full px-8 py-3 pl-10 pr-10 text-gray-900 dark:text-white bg-white dark:bg-gray-900 rounded-full group-hover:bg-gray-100 dark:group-hover:bg-gray-800 transition-colors duration-300">
-          Hire Me
+          Repo
         </span>
       </button>
     </div>
