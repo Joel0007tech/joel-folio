@@ -1,6 +1,9 @@
 import React from 'react'
 import  CountUp  from 'react-countup';
 import { useState } from 'react';
+import { FlipWords } from './Flipwords';
+import Marquee from './Marquee';
+
 
 const About = () => {
 const [counter, setCounter] = useState(false);
@@ -14,15 +17,22 @@ function handleAction() {
           <h1 className='text-[150px] text-white text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>Know Me More</h3>
       <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
-         <div className='flex flex-col gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
+         <div className='flex flex-col w-[620px] gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
           <h3 className='text-2xl font-semibold text-green-700 sm:text-sm'>I'm Joel,
-          <span className='text-3xl font-semibold sm:text-lg'> a Frontend Developer</span></h3>
+          <span className='text-3xl font-semibold sm:text-lg'>
+             <FlipWords
+                    words={["a Frontend developer", "a builder","a designer", "a creator"]}
+                    duration={3000}
+                    className="uppercase"
+                  />
+            </span></h3>
           <p className='text-gray-400 text-md sm:text-sm'>
             A Frontend developer with 2yrs plus experience in building webApps
             and websites for<br/> individuals, and companies
             Delivering work within time and budget is my priority, and it has <br/>
             been what I do for so long
           </p>
+        <Marquee />
          </div>
         
          <div className='flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 p-3 border-1 rounded-xl pl-5 pr-5'>
@@ -40,7 +50,7 @@ function handleAction() {
          </div>
       </div>
       <button onClick={handleAction} className='bg-green-500 text-white border rounded-3xl
-       p-3 mb-3 font-semibold sm:text-sm'>CHECK MY STAT</button>
+       p-3 mb-3 font-semibold sm:text-sm w-96 text-center m-auto'>CHECK MY STAT</button>
         {counter && 
         <>
         <div className='pt-[0.4px] bg-green-500'/>

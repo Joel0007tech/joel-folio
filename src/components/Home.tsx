@@ -15,6 +15,8 @@ import { FlipWords } from './Flipwords'
 import ShimmerButton from './Shimmer'
 
 import { NavLinks } from './index'
+import { CoderProfileCard } from './Portfolio'
+import Portfolio from './Portfolio'
 
 
 
@@ -42,7 +44,7 @@ const [open, setOpen] = useState(false);
 
         {/* sidenav */}
         <div className='flex sm:hidden'>
-          <nav className='flex flex-col bg-black p-5'>
+          <nav className='flex flex-col bg-black text-white w-72 p-5'>
             
             {/* <img src={myImage} alt="image" className=' border-[3px] rounded-md border-gray-500' data-aos="fade" 
             data-aos-delay="200" data-aos-duration="1000"/> */}
@@ -60,26 +62,29 @@ const [open, setOpen] = useState(false);
             <a href='https://twitter.com/Jotechy'><LuTwitter className='fill-gray-200 text-lg'/></a>
             <a href='https://github.com/Joel0007tech'><IoLogoGithub className='fill-gray-200 text-lg'/></a>
             </div>
-          </nav>         
-          <div className='w-full p-5 flex flex-col gap-10' data-aos="fade" data-aos-duration="1000" id='home-bg'>
-             <h3 className='text-center font-semibold  mt-10 text-2xl text-white'>Welcome <span>👋</span></h3>
+          </nav>   
+          <div className='w-fit flex flex-col gap-10' data-aos="fade" data-aos-duration="1000" id='home-bg'>
+             <h3 className='flex relative left-10 font-semibold  mt-10 text-2xl text-white'>Welcome <span>👋</span></h3>
       
-            <div className="text-4xl font-bold flex justify-center mt-10 relative bottom-6">
-      I love{" "}
+            <div className="text-4xl font-bold flex flex-col justify-center relative left-10 mt-10 bottom-6">
+      I love <br/>
       <FlipWords
         words={["developing", "building","crafting", "designing"]}
         duration={3000}
-        className="uppercase"
+        className="uppercase relative right-2"
       />
-      {" "}amazing experiences
+      <span>amazing experiences</span>
     </div>
               
-              <a href="http://">
+              <a href="http://" className='flex relative right-1 left-8'>
                 <ShimmerButton/>
+                
                 </a>
                
           </div>
-        </div>
+            <CoderProfileCard/>
+          </div>
+        
         <div className='sm:block hidden'>
             <div className='flex p-3 justify-between'>
               <a href='https://github.com/Joel0007tech' target='_blank' className='text-2xl text-white'>{mobileLogo}</a>
