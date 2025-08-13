@@ -17,7 +17,7 @@ function handleAction() {
           <h1 className='text-[150px] text-white text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
         <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>Know Me More</h3>
       <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
-         <div className='flex flex-col w-[620px] sm:w-[320px] gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
+         <div className='flex flex-col w-[620px] sm:w-[300px] gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
           <h3 className='text-2xl font-semibold text-green-700 sm:text-sm'>I'm Joel,
           <span className='text-3xl font-semibold sm:text-lg'>
              <FlipWords
@@ -50,7 +50,7 @@ function handleAction() {
          </div>
       </div>
       <button onClick={handleAction} className='bg-green-500 text-white border rounded-3xl
-       p-3 mb-3 font-semibold sm:text-sm w-96 sm:w-14 text-center m-auto'>CHECK MY STAT</button>
+       p-3 mb-3 font-semibold sm:text-sm w-96 sm:w-36 text-center m-auto'>CHECK MY STAT</button>
         {counter && 
         <>
         <div className='pt-[0.4px] bg-green-500'/>
