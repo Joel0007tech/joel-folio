@@ -3,6 +3,8 @@ import  CountUp  from 'react-countup';
 import { useState } from 'react';
 import { FlipWords } from './Flipwords';
 import Marquee from './Marquee';
+import { CoderProfileCard } from './CoderProfileCardSmall';
+
 
 
 const About = () => {
@@ -21,7 +23,7 @@ function handleAction() {
           <h3 className='text-2xl font-semibold text-green-700 sm:text-sm'>I'm Joel,
           <span className='text-3xl font-semibold sm:text-lg'>
              <FlipWords
-                    words={["a Frontend developer", "a builder","a designer", "a creator"]}
+                    words={["a React developer", "a builder","a designer", "a creator"]}
                     duration={3000}
                     className="uppercase text-white"
                   />
@@ -32,6 +34,7 @@ function handleAction() {
             Delivering work within time and budget is my priority, and it has <br/>
             been what I do for so long
           </p>
+          <CoderProfileCard />
         <Marquee />
          </div>
         

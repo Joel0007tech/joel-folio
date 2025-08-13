@@ -45,7 +45,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
         className="w-full flex justify-between items-center text-left p-6 focus:outline-none hover:bg-gray-50 dark:hover:bg-green-800/30 transition-colors duration-200 relative z-10"
         onClick={onClick}
       >
-        <span className="text-lg font-medium text-gray-900 dark:text-green-50 sm:text-md">{question}</span>
+        <span className="text-lg font-medium text-gray-900 dark:text-green-50 sm:text-sm">{question}</span>
         {/* Chevron Icon with a smoother, longer transition */}
         <svg
           className={`w-6 h-6 text-gray-600 dark:text-green-300 transform transition-transform duration-500 ease-in-out ${
@@ -94,10 +94,10 @@ export default function CustomAccordion() {
     <div className="flex items-center justify-center font-sans p-4 rk:bg-black ">
       <div className="w-full max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <span className="bg-[#EBF3FB] dark:bg-blue-900/20 text-[#3B82F6] dark:text-blue-400 text-sm font-medium px-4 py-1.5 rounded-full">
+          <span className="bg-[#EBF3FB] dark:bg-blue-900/20 text-[#3B82F6] dark:text-blue-400 text-sm font-medium px-4 py-1.5 rounded-full relative top-10">
             Help Center
           </span>
-          <h1 className="text-4xl font-bold text-gray-800 dark:text-white mt-4 sm:text-white sm:text-xl">
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-white mt-14 sm:text-white sm:text-xl">
             Frequently Asked Questions (FAQs)
           </h1>
         </div>
