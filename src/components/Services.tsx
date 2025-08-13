@@ -13,9 +13,9 @@ const Services = ({
   return (
     <div>
       <div className='flex flex-col mt-10 pb-20 sm:p-3'>
-      <h1 className='text-[150px] text-white text-center font-semibold sm:text-6xl'>{background}</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>{frontText}</h3>
-        <div className='flex justify-center gap-10 relative bottom-12 sm:flex sm:flex-col'>
+      <h1 className='text-[150px] text-white text-center font-semibold sm:text-3xl sm:italic'>{background}</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl sm:hidden'>{frontText}</h3>
+        <div className='flex justify-center gap-10 relative bottom-12 sm:flex sm:flex-col sm:top-10'>
         <div className='flex flex-col gap-4 border-[3px] border-gray-500 rounded-xl bg-gray-600 p-7'>
           <CgWebsite className='text-3xl fill-green-600 text-gray-600 bg-white border rounded-md'/>
          <h3 className='font-bold text-xl sm:text-md'>Website Development</h3>
@@ -33,7 +33,7 @@ const Services = ({
         </div>
         </div>
         <div className='flex flex-col m-auto gap-5 mt-6'>
-          <h3 className='text-center font-semibold text-3xl pb-5'>My Skills</h3>
+          <h3 className='text-center font-semibold text-3xl pb-5 sm:mt-12 sm:text-white sm:italic sm:text-2xl'>My Skills</h3>
           <div className='flex gap-3'>
             <div className='flex-col border bg-slate-200 rounded-xl p-4 sm:p-2' 
             data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">

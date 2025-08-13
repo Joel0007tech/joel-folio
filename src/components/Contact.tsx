@@ -23,10 +23,10 @@ const Contact = ({
   return (
     <div>
       <div className="bg-gradient-to-b from-green-400 to-stone-700 overflow-hidden sm:p-4">
-        <h1 className="text-[150px] text-white text-center font-semibold sm:text-6xl">
+        <h1 className="text-[150px] text-white text-center font-semibold sm:text-3xl sm:italic sm:mt-4 sm:mb-6">
           {background}
         </h1>
-        <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-[84px] sm:text-2xl">
+        <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-[84px] sm:text-2xl sm:hidden">
           {frontText}
         </h3>
         <div className="flex justify-center gap-12 sm:flex sm:flex-col">

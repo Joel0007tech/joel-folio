@@ -16,9 +16,9 @@ function handleAction() {
   return (
     <div>
       <div className='p-3 flex flex-col bg-gradient-to-b from-green-400 to-stone-700'>
-          <h1 className='text-[150px] text-white text-center font-semibold sm:text-6xl'>ABOUT ME</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl'>Know Me More</h3>
-      <div className='flex relative bottom-12 m-auto gap-32 sm:flex sm:flex-col'>
+          <h1 className='text-[150px] text-white text-center font-semibold sm:text-3xl sm:italic sm:mt-4 sm:mb-6'>ABOUT ME</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-xl sm:hidden'>Know Me More</h3>
+      <div className='flex relative 2xl:bottom-12 m-auto gap-32 sm:flex sm:flex-col sm:top-5'>
          <div className='flex flex-col w-[620px] sm:w-[300px] gap-5 bg-gradient-to-b from-slate-900 to-zinc-800 pl-5 pr-5 border-1 rounded-xl p-3'>
           <h3 className='text-2xl font-semibold text-green-700 sm:text-sm'>I'm Joel,
           <span className='text-3xl font-semibold sm:text-lg'>
@@ -38,7 +38,7 @@ function handleAction() {
         <Marquee />
          </div>
         
-         <div className='flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 p-3 border-1 rounded-xl pl-5 pr-5'>
+         <div className='flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 p-3 border-1 rounded-xl pl-5 pr-5 sm:relative sm:bottom-16'>
           <p className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 border-b-gray-300 p-2 sm:text-sm'>
             Name : <span  className='font-normal sm:text-sm'>Joel .A.</span></p>
           <a  href='mailto:ajiolajoel@gmail.com' className='text-slate-500 text-base font-bold border border-t-0 border-r-0 border-l-0 sm:text-sm border-b-gray-300 p-2'>

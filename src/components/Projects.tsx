@@ -13,10 +13,10 @@ const Projects = ({
   return (
     <div className="overflow-hidden">
       <div className="flex flex-col bg-gradient-to-r from-green-600 to-gray-900 pb-10 sm:p-3">
-        <h1 className="text-[150px] text-white text-center font-semibold sm:text-6xl">
+        <h1 className="text-[150px] text-white text-center font-semibold sm:text-3xl sm:italic sm:mt-6">
           {background}
         </h1>
-        <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl">
+        <h3 className="font-semibold text-4xl text-center relative bottom-32 sm:mt-20 sm:text-2xl sm:hidden">
           {frontText}
         </h3>
         <Works />

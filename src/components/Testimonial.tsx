@@ -8,8 +8,8 @@ const Testimonial = ({
   return (
     <div>
       <div className='pb-16 sm:p-3'>
-      <h1 className='text-[150px] text-white text-center font-semibold sm:text-5xl'>{background}</h1>
-        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:text-2xl sm:mt-[90px]'>{frontText}</h3>
+      <h1 className='text-[150px] text-white text-center font-semibold sm:text-3xl sm:italic sm:mb-10 sm:mt-4'>{background}</h1>
+        <h3 className='font-semibold text-4xl text-center relative bottom-32 sm:text-2xl sm:mt-[90px] sm:hidden'>{frontText}</h3>
         <div className='flex justify-center gap-10 sm:flex sm:flex-col'>
            <div className=' flex flex-col gap-4 bg-gradient-to-b from-slate-900 to-zinc-800 border rounded-lg border-green-500 p-10'>
               <h3 className='text-white text-xl leading-normal font-bold'>Emmet Robbinson</h3>
