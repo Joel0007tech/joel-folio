@@ -45,7 +45,7 @@ export const CoderProfileCard = () => {
           <div className="h-3 w-3 rounded-full bg-orange-400"></div>
           <div className="h-3 w-3 rounded-full bg-green-400"></div>
         </div>
-        <div className="text-xs text-zinc-600 dark:text-gray-400 font-mono">coder.js</div>
+        <div className="text-xs text-zinc-600 dark:text-gray-400 font-mono">About.js</div>
       </div>
 
       {/* Code Content Area */}
@@ -66,7 +66,7 @@ export const CoderProfileCard = () => {
           <code className="font-mono text-xs md:text-sm lg:text-base w-full">
             <div>
               <span className="mr-2 text-pink-500 dark:text-pink-400">const</span>
-              <span className="mr-2 text-violet-500 dark:text-violet-400">coder</span>
+              <span className="mr-2 text-violet-500 dark:text-violet-400">About</span>
               <span className="mr-2 text-pink-500 dark:text-pink-400">=</span>
               <span className="text-zinc-600 dark:text-gray-400">{'{'}</span>
             </div>
